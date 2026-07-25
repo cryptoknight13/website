@@ -1,177 +1,1023 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menu Bar Right Aligned</title>
-  <link rel="stylesheet" href="/rpodder/Style/index.css"/>
-  <script src="menu.js" defer></script>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Podder | PhD Candidate, Cybersecurity Researcher</title>
+    <meta name="description" content="Ph.D. Candidate in Computer Science at Colorado State University. Research in AI-planning frameworks for cyber-physical system security and resiliency.">
+    
+    <!-- Favicon: inline navy RP monogram -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%231F497D' width='64' height='64'/%3E%3Ctext x='32' y='42' font-size='36' font-weight='bold' fill='white' text-anchor='middle' font-family='Georgia, serif'%3ERP%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <!-- Google Fonts: Fraunces (elegant serif headings) and Inter (body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="Style/main.css">
 </head>
-
 <body>
-
-<!-- Top Menu Bar -->
-<div class="top-bar">
-  
-  <!-- LEFT SIDE (empty or logo if you want) -->
-  <div class="left-placeholder">
-    <!-- Optional: You can add a logo or name here later -->
-  </div>
-
-  <!-- RIGHT SIDE (Menu + Hamburger) -->
-  <div class="right-menu">
-    <div class="menu-toggle" id="menu-toggle">
-      <i class="fa fa-bars"></i>
-    </div>
-    <nav class="full-width-nav" id="full-width-nav">
-      <ul class="tabs">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="achievement.html">Achievements</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">Rakesh Podder</div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#appointments" class="nav-link">Appointments</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+                <li><a href="#teaching" class="nav-link">Teaching</a></li>
+                <li><a href="#service" class="nav-link">Service</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-  </div>
-</div>
 
-<!-- Name Section -->
-<section class="name-section">
-  <h1 class="name-with-line">Rakesh Podder</h1>
-  <p class="name-description">
-    <strong> PhD Student in Computer Science </strong> specialed in <em> Cybersecurity, Firmware Security, AI Planning, and Machine Learning </em>.
-  </p>
-</section>
-
-<!-- TWO COLUMN SECTION -->
-<section class="two-column-section">
-
-  <!-- LEFT COLUMN -->
-  <div class="left-column">
-    <!-- My Picture -->
-    <img src="images/IMG_3696.JPG" alt="Rakesh Podder" class="profile-picture-column">
-
-    <!-- My Bio -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p class="bio-text">
-        I have received the B.Tech. degree in Electrical Engineering from the Indian Institute of Technology (IIT), Patna, India, in 2017, the M.E. degree in Control System and Robotics from Jadavpur University (JU), Kolkata, India, in 2020, and M.S. in Computer Science from Colorado State University (CSU), Colorado, USA, in 2025. I am currently pursuing the Ph.D. degree in Computer Science at Colorado State University (CSU), Fort Collins, CO, USA. My research interests include cybersecurity, firmware security, AI planning, and machine learning. I have contributed to the development of secure frameworks like the Hardware Root of Trust (HRoT) and has actively participated in projects such as Microsoft Project Cerberus. I have published in various international conferences and journals, and he received the Best Paper Awards at the IEEE QRS 2024 and IEEE TPS 2024 Conference. I am also a member of IEEE.</p>
-      </p>
-    </section>
-  </div>
-
-  <!-- RIGHT COLUMN -->
-  <div class="right-column">
-
-    <!-- Achievements Section -->
-    <section id="achievements">
-      <div class="achievements-container">
-        <h2>Recent News</h2>
-        <div class="achievement">
-          <img src="images/IMG_5285.jpg" alt="Robert B. France Fellowship in Computer Science" class="achievement-img">
-          <div class="achievement-content">
-            <h3>Robert B. France Fellowship in Computer Science</h3>
-            <p>I have been awarded the Robert France Memorial Fellowship, established in memory of Professor Robert France — a visionary in Software Engineering and a beloved member of the Computer Science Department at Colorado State University.</p>
-          </div>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="images/IMG_3696.JPG" alt="Rakesh Podder profile photo" class="profile-photo">
+                </div>
+                <div class="hero-text">
+                    <h1>Rakesh Podder</h1>
+                    <p class="hero-title">Ph.D. Candidate in Computer Science · Colorado State University</p>
+                    <p class="hero-tagline">Developing AI-planning frameworks for security and resiliency of cyber-physical systems.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:rakeshpodder3@gmail.com" class="btn btn-outline" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="Rakesh-Podder-CV.pdf" class="btn btn-primary" aria-label="Download CV"><i class="fas fa-file-pdf"></i> CV</a>
+                        <a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" class="btn btn-outline" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://github.com/cryptoknight13" class="btn btn-outline" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rakesh-podder-09181b7b/" class="btn btn-outline" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="quick-facts">
+                        <p><strong>Advised by:</strong> Prof. Indrajit Ray</p>
+                        <p><strong>NIST Foreign Research Scientist:</strong> 2024–2026</p>
+                        <p><strong>Awards:</strong> 2× IEEE Best Paper (TPS-ISA 2024, QRS 2024)</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="achievement">
-          <img src="images/GTA.jpg" alt="Excellence in Teaching" class="achievement-img">
-          <div class="achievement-content">
-            <h3>Excellence in Teaching Certificate - Colorado State University 2025</h3>
-            <p>For completion of the Language, Culture, and Resources program for Excellence in Teaching for International Graduate Teaching Assistants.</p>
-          </div>
-        </div>
-
-        <!-- "More..." link -->
-        <a href="achievement.html" class="more-icon-link" title="View all achievements">
-          <i class="fa fa-arrow-circle-right"></i> Continute Reading ...
-        </a>
-      </div>
     </section>
 
-    <!-- Job Experiences Section -->
-    <section id="experience">
-      <h2>Job Experiences</h2>
-      <div class="timeline">
-
-        <!-- Job 1 -->
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa fa-industry"></i>
-          </div>
-          <div class="timeline-content">
-            <h3>Foreign Research Scientist</h3>
-            <h4>National Institute of Standard Technology (2024 - Present)</h4>
-            <p>Using Bugs Framework (BF) to identify causal classification of security bugs and related faults, featuring a formal language for unambiguous specification of security weaknesses. Creating a BF CVE labeled dataset (for more than 100+ CVEs & 200+ CWEs) to formally structure the vulnerabilities.</p>
-          </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="section-content">
+                <p>I am a Ph.D. candidate in Computer Science at Colorado State University, advised by Prof. Indrajit Ray. My research develops AI-planning-based frameworks for the security and resiliency analysis of cyber-physical systems, centered on three connected contributions: attack-connectivity graph analysis (SPEAR and i-EXAM), unified Resiliency and Safety Graph frameworks for modeling cascading IT-OT failures, and SERA, a re-programmable simulation testbed for explainable resiliency analysis. Alongside this work, I develop CAPE, a context-aware vulnerability prioritization engine, as an independent research line. From 2024 to 2026, I served as a Foreign Research Scientist at the National Institute of Standards and Technology (NIST), collaborating with Irena Bojanova on the Bugs Framework to formalize the classification of security bugs, CVEs, and CWEs. My research has been supported by the Office of Naval Research, the National Science Foundation, and the Department of Energy, and recognized with Best Paper awards at IEEE TPS-ISA 2024 and IEEE QRS 2024. Alongside research, I teach and mentor at CSU as a graduate teaching assistant and research mentor, designing hands-on security labs and lecturing independently when called on.</p>
+                
+                <div class="research-interests">
+                    <h3>Research Interests</h3>
+                    <div class="interest-tags">
+                        <span class="tag">Cyber-Physical System Security & Resiliency</span>
+                        <span class="tag">AI Planning for Security</span>
+                        <span class="tag">Attack Graphs & Vulnerability Analysis</span>
+                        <span class="tag">Firmware & Hardware Security (HRoT)</span>
+                        <span class="tag">Formal Methods & Verification</span>
+                        <span class="tag">Explainable AI & Adversarial ML</span>
+                        <span class="tag">Software Supply Chain Security</span>
+                        <span class="tag">Cybersecurity Education</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Job 2 -->
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa fa-graduation-cap"></i>
-          </div>
-          <div class="timeline-content">
-            <h3>Graduate Research Assistant</h3>
-            <h4>Colorado State University (2022 - Present)</h4>
-            <h4>AMI US Holdings Inc. (2022 - Present)</h4>
-            <p>Working on firmware security, AI planning, and machine learning for cybersecurity applications. Contributing to projects like Microsoft Project Cerberus and Hardware Root of Trust (HRoT).</p>
-          </div>
-        </div>
-
-        <!-- Job 3 -->
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa fa-briefcase"></i>
-          </div>
-          <div class="timeline-content">
-            <h3>System Engineer</h3>
-            <h4>Infosys Ltd. (2020 - 2022)</h4>
-            <p>Transformed data between formats (30+ mapping tree) using IBM WebSphere, led team to optimize data handling efficiencies. Delivered more than 100 client requests of customised maps for various data formats.</p>
-          </div>
-        </div>
-
-        <!-- Job 4 -->
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <i class="fa fa-cogs"></i>
-          </div>
-          <div class="timeline-content">
-            <h3>Programmer Analyst</h3>
-            <h4>Cognizant (2017 - 2020)</h4>
-            <p>Worked as a Quality Assurance Engineer, specialized in Selenium with Java to perform automation test planning and manage the quality assurance program in the organization.</p>
-          </div>
-        </div>
-
-      </div>
     </section>
 
-  </div> <!-- End Right Column -->
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 – present</div>
+                    <div class="timeline-body">
+                        <h3>Ph.D. Candidate, Computer Science</h3>
+                        <p class="timeline-org">Colorado State University, Fort Collins, CO, USA</p>
+                        <p class="timeline-meta">CGPA: 4.00 / 4.00</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 – 2025</div>
+                    <div class="timeline-body">
+                        <h3>Master of Science (Thesis), Computer Science</h3>
+                        <p class="timeline-org">Colorado State University, Fort Collins, CO, USA</p>
+                        <p class="timeline-meta">CGPA: 4.00 / 4.00</p>
+                        <p class="timeline-meta"><em>Thesis:</em> <a href="https://www.proquest.com/openview/05e80ff68a764c0b737f3562a2453690/1?pq-origsite=gscholar&cbl=18750&diss=y">Preventing Malicious Modifications to Firmware Using Hardware Root of Trust (HRoT)</a></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 – 2020</div>
+                    <div class="timeline-body">
+                        <h3>Master of Engineering (Thesis), Electrical Engineering</h3>
+                        <p class="timeline-org">Jadavpur University, Kolkata, West Bengal, India</p>
+                        <p class="timeline-meta">CGPA: 9.11 / 10 <span class="timeline-honor">Gold Medalist</span></p>
+                        <p class="timeline-meta"><em>Thesis:</em> Data Security of IoT Enabled Autonomous Robots from the Perspective of its Various Controlled Actions</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2013 – 2017</div>
+                    <div class="timeline-body">
+                        <h3>Bachelor of Technology, Electrical Engineering</h3>
+                        <p class="timeline-org">Indian Institute of Technology, Patna, Bihar, India</p>
+                        <p class="timeline-meta">CGPA: 7.5 / 10</p>
+                        <p class="timeline-meta"><em>Dissertation:</em> Low Cost Signal Generator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</section> <!-- End Two Column Section -->
+    <!-- PROFESSIONAL APPOINTMENTS SECTION -->
+    <section id="appointments" class="appointments">
+        <div class="container">
+            <h2>Professional Appointments</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2026 – present</div>
+                    <div class="timeline-body">
+                        <h3>Graduate Research Assistant</h3>
+                        <p class="timeline-org">Colorado State University, Department of Computer Science · Colorado, USA</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2026 – Jun 2026</div>
+                    <div class="timeline-body">
+                        <h3>Graduate Mentor</h3>
+                        <p class="timeline-org"><a href="https://tilt.colostate.edu/oura/">Office for Undergraduate Research and Artistry</a>, Colorado State University · Colorado, USA</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2024 – May 2026</div>
+                    <div class="timeline-body">
+                        <h3>Foreign Research Scientist</h3>
+                        <p class="timeline-org"><a href="https://www.nist.gov/">National Institute of Standards and Technology (NIST)</a> · Gaithersburg, USA</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Aug 2025 – Dec 2025</div>
+                    <div class="timeline-body">
+                        <h3>Graduate Teaching Assistant</h3>
+                        <p class="timeline-org">Colorado State University, Department of Computer Science · Colorado, USA</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2022 – Aug 2025</div>
+                    <div class="timeline-body">
+                        <h3>Graduate Research Assistant</h3>
+                        <p class="timeline-org">Colorado State University, Department of Computer Science · Colorado, USA</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2021 – Apr 2022</div>
+                    <div class="timeline-body">
+                        <h3>Systems Engineer</h3>
+                        <p class="timeline-org">Infosys Ltd. · Bhubaneswar, India</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2020 – May 2021</div>
+                    <div class="timeline-body">
+                        <h3>Programmer Analyst</h3>
+                        <p class="timeline-org">Cognizant Technology Solutions India Pvt. Ltd. · Kolkata, India</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2016 – Jul 2016</div>
+                    <div class="timeline-body">
+                        <h3>Summer Intern</h3>
+                        <p class="timeline-org">Chandrapura Thermal Power Station, DVC · Bokaro, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Social Media Section -->
-<section id="social-media">
-  <h3>Connect with Me</h3>
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/rakesh-podder-09181b7b/" class="fa fa-linkedin"></a>
-    <a href="https://github.com/cryptoknight13" class="fa fa-github"></a>
-    <a href="https://www.instagram.com/lucifer_morningstar0313/" class="fa fa-instagram"></a>
-    <a href="https://www.facebook.com/rakesh.podder.39" target="_blank"><i class="fa fa-facebook"></i></a>
-    <a href="https://www.youtube.com/@usBong." target="_blank"><i class="fa fa-youtube"></i></a>
-  </div>
-</section>
+    <!-- RESEARCH SECTION -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2>Research</h2>
+            <p class="section-intro">My research centers on AI-planning-based frameworks for cyber-physical system security and resiliency.</p>
+            <div class="research-grid">
+                <!-- SPEAR & i-EXAM -->
+                <div class="research-card">
+                    <img src="images/iexam-landing.png" alt="i-EXAM web application landing page">
+                    <div class="card-content">
+                        <h3>SPEAR & i-EXAM</h3>
+                        <p>Attack-connectivity graph modeling and hardening analysis. AI-planning and LLM-powered tool for system administrators to build network security profiles and run what-if hardening analyses.</p>
+                        <div class="card-tags">
+                            <span class="tag">AI Planning</span>
+                            <span class="tag">Attack Graphs</span>
+                            <span class="tag">Network Security</span>
+                        </div>
+                        <a href="https://huggingface.co/spaces/CryptoKnight007/i-EXAM" class="card-link">Live demo → i-EXAM <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
 
-<footer>
-  <p>&copy; 2025 Rakesh Podder</p>
-</footer>
+                <!-- Resiliency & Safety Graphs -->
+                <div class="research-card">
+                    <img src="images/rg-graph.png" alt="Resiliency Graph framework">
+                    <div class="card-content">
+                        <h3>Resiliency & Safety Graphs</h3>
+                        <p>Unified frameworks modeling how cyber attacks propagate into system failures across IT and OT domains in cyber-physical systems.</p>
+                        <div class="card-tags">
+                            <span class="tag">CPS Security</span>
+                            <span class="tag">Attack Propagation</span>
+                            <span class="tag">Failure Analysis</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- SERA -->
+                <div class="research-card">
+                    <img src="images/sera.png" alt="SERA simulation environment">
+                    <div class="card-content">
+                        <h3>SERA</h3>
+                        <p>An AI-driven, re-programmable simulation environment for explainable resiliency analysis, supporting offensive/defensive security research and teaching modules for cybersecurity education.</p>
+                        <div class="card-tags">
+                            <span class="tag">Simulation</span>
+                            <span class="tag">XAI</span>
+                            <span class="tag">CPS</span>
+                            <span class="tag">Education</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- CAPE -->
+                <div class="research-card">
+                    <img src="images/cape-pipeline.png" alt="CAPE prioritization engine pipeline" class="card-img contain">
+                    <div class="card-content">
+                        <h3>CAPE</h3>
+                        <p>Context-Aware CVE Prioritization Engine. Scores CVEs against a project's SBOM using reachability and patch-presence evidence, re-ranks with 4-dimension AHP-weighted priority.</p>
+                        <div class="card-tags">
+                            <span class="tag">Vulnerability Management</span>
+                            <span class="tag">SBOM</span>
+                            <span class="tag">Prioritization</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- OSCAR -->
+                <div class="research-card">
+                    <img src="images/pipeline.png" alt="OSCAR cross-level risk pipeline" class="card-img contain">
+                    <div class="card-content">
+                        <h3>OSCAR</h3>
+                        <p>Cross-level risk propagation framework linking code-level metrics to ecosystem-level dependency exposure, surfacing false-positive CVE alerts and structurally critical micro-dependencies.</p>
+                        <div class="card-tags">
+                            <span class="tag">Supply Chain Security</span>
+                            <span class="tag">Risk Analysis</span>
+                            <span class="tag">Dependencies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Firmware Security -->
+                <div class="research-card">
+                    <img src="images/cerberus.jpg" alt="Firmware security with Cerberus">
+                    <div class="card-content">
+                        <h3>Firmware Security</h3>
+                        <p>Secure firmware remote update (S-RFUP), protection-in-transit protocol (PIT), and CDDL mapping schema (CoDICE) built on Microsoft Project Cerberus and Google Open-DICE.</p>
+                        <div class="card-tags">
+                            <span class="tag">Firmware</span>
+                            <span class="tag">Hardware Root of Trust</span>
+                            <span class="tag">Open Source</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/AMIProject0/Project-Cerberus-PLDM">S-RFUP</a> • 
+                            <a href="https://github.com/cryptoknight13/PIT-Cerberus">PIT</a> • 
+                            <a href="https://github.com/cryptoknight13/CoDICE-Framework">CoDICE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS SECTION -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <p class="section-note">* = equal contribution</p>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="conference">Conference</button>
+                <button class="filter-btn" data-filter="journal">Journal</button>
+                <button class="filter-btn" data-filter="abstract">Abstract</button>
+                <button class="filter-btn" data-filter="under-review">Under Review</button>
+                <button class="filter-btn" data-filter="patents">Patents</button>
+            </div>
+
+            <div class="publications-list" id="publications-list">
+                <!-- PEER-REVIEWED CONFERENCE (13) -->
+                <div class="pub-group" data-category="conference">
+                    <h3 class="pub-group-title">Peer-Reviewed Conference</h3>
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">1.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, F. G. Arellano and I. Ray, "Hidden Amplifiers: Cross-Level Risk in Software Supply Chains," in <em>Proceedings of the 42nd International Conference on Software Maintenance and Evolution (ICSME)</em>, 2026. <span class="status-badge">Accepted</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">2.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong> and I. Ray, "SERA – An AI Driven Re-Programmable Simulation Environment for Explainable Resiliency Analysis in Cyber-Physical Systems," in <em>Proceedings of the 6th ACM Workshop on Secure and Trustworthy Cyber-Physical Systems (SaT-CPS '26)</em>, Frankfurt am Main, Germany, June 23–25, 2026. <a href="https://doi.org/10.1145/3806008.3811708">10.1145/3806008.3811708</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">3.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, W. Ganim, S. Sreedharan, I. Ray, and I. Ray, "i-EXAM: Instructable and Explainable Attack Connectivity Graph Modeler," in <em>Proceedings of the International Conference on Automated Planning and Scheduling (ICAPS '26)</em>, 2026. (Demo Paper)</p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">4.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, J. Simental, E. Azizli, B. Mantha and I. Ray, "CoDICE: Roll the DICE for Firmware Attestation," in <em>Proceedings of 2025 IEEE 7th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)</em>, Pittsburgh, PA, USA, 2025, pp. 183-196. <a href="https://ieeexplore.ieee.org/abstract/document/11410223">10.1109/TPS-ISA67132.2025.00028</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">5.</span>
+                        <div class="pub-content">
+                            <p>T. Rhaimi, H. Aghayarzadeh, <strong>R. Podder</strong> and I. Ray, "Formal Specification and Verification of Protection in Transit (PIT) Protocol Using UPPAAL," in <em>Proceedings of 2025 22nd Annual International Conference on Privacy, Security, and Trust (PST)</em>, Fredericton, NB, Canada, 2025, pp. 1-6. <a href="https://ieeexplore.ieee.org/abstract/document/11268865">10.1109/PST65910.2025.11268865</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">6.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong> T. Caglar, S. K. Bashir, S. Sreedharan, I. Ray, and I. Ray, "SPEAR: Security Posture Evaluation using AI Planner-Reasoning on Attack-Connectivity Hypergraphs," in <em>Proceedings of the 30th ACM Symposium on Access Control Models and Technologies (SACMAT '25)</em>. Association for Computing Machinery, New York, NY, USA, 62–73. <a href="https://doi.org/10.1145/3734436.3734451">10.1145/3734436.3734451</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">7.</span>
+                        <div class="pub-content">
+                            <p>R. Talukdar, <strong>R. Podder</strong>, and I. Ray, "VKG2AG : Generating Automated Knowledge-Enriched Attack Graph (AG) from Vulnerability Knowledge Graph (VKG)," in <em>Proceedings of the 22nd International Conference on Security and Cryptography (SECRYPT 2025)</em>. SciTePress, pp. 420-428. <a href="https://www.scitepress.org/Papers/2025/135267/135267.pdf">10.5220/0013526700003979</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">8.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, T. Rios, I. Ray, P. Raman, and S. Righi, "S-RFUP: Secure Remote Firmware Update Protocol," in <em>Proceedings of the International Conference on Information Systems Security (ICISS 2024)</em>. Lecture Notes in Computer Science, Cham, Springer Nature Switzerland, vol 15416, pp. 42-62. <a href="https://doi.org/10.1007/978-3-031-80020-7_3">10.1007/978-3-031-80020-7_3</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">9.</span>
+                        <div class="pub-content">
+                            <p>S. K. Bashir<strong>*</strong>, <strong>R. Podder</strong><strong>*</strong>, S. Sreedharan, I. Ray and I. Ray, "Resiliency Graphs: Modelling the Interplay between Cyber Attacks and System Failures through AI Planning," in <em>Proceedings of the 2024 IEEE 6th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)</em>, Washington, DC, USA, 2024, pp. 292-302. (*Equal contribution) <a href="https://doi.org/10.1109/TPS-ISA62245.2024.00041">10.1109/TPS-ISA62245.2024.00041</a> <span class="badge badge-gold">Best Paper Award</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">10.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong> and S. Ghosh, "Impact of White-Box Adversarial Attacks on Convolutional Neural Networks," in <em>Proceedings of the 2024 International Conference on Emerging Trends in Networks and Computer Communications (ETNCC)</em>, Windhoek, Namibia, 2024, pp. 1-9. <a href="https://doi.org/10.1109/ETNCC63262.2024.10767521">10.1109/ETNCC63262.2024.10767521</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">11.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, J. Sovereign, I. Ray, M. B. Santharam and S. Righi, "The PIT-Cerberus Framework: Preventing Device Tampering During Transit," in <em>Proceedings of the 2024 IEEE 24th International Conference on Software Quality, Reliability and Security (QRS)</em>, Cambridge, United Kingdom, 2024, pp. 584-595. <a href="https://doi.org/10.1109/QRS62785.2024.00064">10.1109/QRS62785.2024.00064</a> <span class="badge badge-gold">Best Paper Award</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">12.</span>
+                        <div class="pub-content">
+                            <p>I. Ray, S. Sreedharan, <strong>R. Podder</strong>, S. K. Bashir and I. Ray, "Explainable AI for Prioritizing and Deploying Defenses for Cyber-Physical System Resiliency," in <em>Proceedings of the 2023 5th IEEE International Conference on Trust, Privacy and Security in Intelligent Systems and Applications (TPS-ISA)</em>, Atlanta, GA, USA, 2023, pp. 184-192. <a href="https://doi.org/10.1109/TPS-ISA58951.2023.00032">10.1109/TPS-ISA58951.2023.00032</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="conference">
+                        <span class="pub-num">13.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong> and R. K. Barai, "Hybrid Encryption Algorithm for the Data Security of ESP32 based IoT-enabled Robots," in <em>Proceedings of the 2021 Innovations in Energy Management and Renewable Resources(52042)</em>, Kolkata, India, 2021, pp. 1-5. <a href="https://doi.org/10.1109/IEMRE52042.2021.9386824">10.1109/IEMRE52042.2021.9386824</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PEER-REVIEWED JOURNAL (3) -->
+                <div class="pub-group" data-category="journal">
+                    <h3 class="pub-group-title">Peer-Reviewed Journal</h3>
+                    <div class="pub-item" data-category="journal">
+                        <span class="pub-num">1.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, M. Abdelgawad, I. Ray, I. Ray, M. Santharam, and S. Righi, "Correctness and security analysis of the protection in transit (PIT) protocol," <em>Journal of Systems and Software</em>, 230, p.112501, 2025. <a href="https://doi.org/10.1016/j.jss.2025.112501">10.1016/j.jss.2025.112501</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="journal">
+                        <span class="pub-num">2.</span>
+                        <div class="pub-content">
+                            <p>R. Muslim, R. Delfianti, C. Harsito, S. Palaloi, N. A. Aryono, A. Y. Indrarahmana, S. R. Joshua, and <strong>R. Podder</strong>, "Optimizing the Integration of Wind and Solar Power for Hybrid Electrical Energy in High-Rise Building Energy Systems," <em>Engineered Science</em>, 35, p.1555, 2025. <a href="http://dx.doi.org/10.30919/es1555">10.30919/es1555</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="journal">
+                        <span class="pub-num">3.</span>
+                        <div class="pub-content">
+                            <p>E. Rovianto, R. Delfianti, F. Minelli, C. Harsito, <strong>R. Podder</strong> and S. R. Joshua, "Crossflow Thermoelectric Kitchen Hood System for Enhancing Sustainable Energy in Buildings," <em>Civil Engineering Journal</em>, 12(6), 2402–2414. <a href="https://doi.org/10.28991/CEJ-2026-012-06-014">10.28991/CEJ-2026-012-06-014</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONFERENCE ABSTRACTS (2) -->
+                <div class="pub-group" data-category="abstract">
+                    <h3 class="pub-group-title">Conference Abstracts</h3>
+                    <div class="pub-item" data-category="abstract">
+                        <span class="pub-num">1.</span>
+                        <div class="pub-content">
+                            <p>I. Ray, <strong>R. Podder</strong>, S. Sreedharan, I. Ray, and S. K. Bashir, "iEXAM: AI-Driven Cyber Security with Explainability," in <em>2026 CAE Cybersecurity Community Symposium</em>, Pittsburgh, Pennsylvania, 2026, pp. 73. <a href="https://8505d155-f364-4b90-865e-959b0628f5da.usrfiles.com/ugd/8505d1_9e45d49080d142ae941ae6fdac82b871.pdf">Abstract Link</a></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="abstract">
+                        <span class="pub-num">2.</span>
+                        <div class="pub-content">
+                            <p>I. Ray, S. K. Bashir, <strong>R. Podder</strong>, S. Sreedharan, and I. Ray, "From Cyber Attacks to System Recovery: A Resiliency-Centered View of Cyber-Physical Systems Security," in <em>2026 CAE Cybersecurity Community Symposium</em>, Pittsburgh, Pennsylvania, 2026, pp. 74. <a href="https://8505d155-f364-4b90-865e-959b0628f5da.usrfiles.com/ugd/8505d1_9e45d49080d142ae941ae6fdac82b871.pdf">Abstract Link</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UNDER REVIEW (6) -->
+                <div class="pub-group" data-category="under-review">
+                    <h3 class="pub-group-title">Under Review</h3>
+                    <div class="pub-item" data-category="under-review">
+                        <span class="pub-num">1.</span>
+                        <div class="pub-content">
+                            <p>F. G. Arellano and <strong>R. Podder</strong>, "From Fix Commits to Vulnerable Functions: Automated Patch Mining for Function-Level CVE Resolution," in <em>Proceedings of the 2026 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED)</em>, 2026, Co-located with ACM CCS 2026. <span class="status-badge">Under Review</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="under-review">
+                        <span class="pub-num">2.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, V. Koscinski and I. Ray, "CAPE — Context-Aware Prioritization Engine for Vulnerability Scoring and Management," in <em>Proceedings of the 49th International Conference on Software Engineering (ICSE)</em>, 2027. <span class="status-badge">Under Review</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="under-review">
+                        <span class="pub-num">3.</span>
+                        <div class="pub-content">
+                            <p>S. K. Bashir, P. D. Hopkins, <strong>R. Podder</strong>, S. Shreedharan, I. Ray and I. Ray, "AWARE-RG: Abstraction Aware Explanation of Resiliency Graphs for Cyber Physical Systems," in <em>Proceedings of the 48th IEEE Symposium on Security and Privacy</em>, 2027. <span class="status-badge">Under Review</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="under-review">
+                        <span class="pub-num">4.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, P. D. Hopkins, S. K. Bashir, S. Shreedharan, I. Ray and I. Ray, "Safety Graph: When Safety Responses Become Attack Surfaces in Cyber-Physical Systems," in <em>Proceedings of the Network and Distributed System Security (NDSS) Symposium</em>, 2026. <span class="status-badge">Under Review</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="under-review">
+                        <span class="pub-num">5.</span>
+                        <div class="pub-content">
+                            <p>S. K. Bashir, <strong>R. Podder</strong>, S. Sreedharan, I. Ray, and I. Ray, "AFROT: A Framework for Modeling and Analyzing Cascading Failures in CPS Triggered by Cyber Attacks," <em>IEEE Transactions on Dependable and Secure Computing</em>, 2026. <span class="status-badge">Under Review</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="under-review">
+                        <span class="pub-num">6.</span>
+                        <div class="pub-content">
+                            <p>E. Rovianto, S. D. Prasetyo, C. Harsito, S. R. Joshua, <strong>R. Podder</strong>, A. Y. Indrarahman, and A. N. S. Permata, "Artificial Intelligence–Based Energy Management in Hybrid Biomass–Storage–EV Microgrids: A Systematic Review and Meta-Analysis," <em>Green Technologies and Sustainability</em>, 2026. <span class="status-badge">Under Review</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PATENTS (2) -->
+                <div class="pub-group" data-category="patents">
+                    <h3 class="pub-group-title">Patents</h3>
+                    <div class="pub-item" data-category="patents">
+                        <span class="pub-num">1.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, S. K. Bashir, S. Sreedharan, I. Ray, and I. Ray, "Instructable AI Agent For Explainable Cybersecurity Planning and Analysis," U.S. Provisional Patent Application Serial No. 63/839,787, filed on July 7, 2025. <span class="status-badge">Approved</span></p>
+                        </div>
+                    </div>
+
+                    <div class="pub-item" data-category="patents">
+                        <span class="pub-num">2.</span>
+                        <div class="pub-content">
+                            <p><strong>R. Podder</strong>, S. K. Bashir, S. Sreedharan, I. Ray, and I. Ray, "System and Methods for Building an Instructable AI Agent for Explainable Cybersecurity Planning and Analysis," U.S. Full Patent Application, filed on July 7, 2026. <span class="status-badge">Submitted</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWARDS & FUNDING SECTION -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2>Awards & Funding</h2>
+            
+            <div class="awards-subsection">
+                <h3>Awards & Honors</h3>
+                <div class="awards-list">
+                    <div class="award-row">
+                        <span class="award-year">2026</span>
+                        <div class="award-text">
+                            <p class="award-title">Computer Science Graduate Fellowship Award</p>
+                            <p class="award-org">College of Natural Sciences, CSU | $6,250</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2026</span>
+                        <div class="award-text">
+                            <p class="award-title">Certificate of Academic Excellence Award</p>
+                            <p class="award-org">Colorado State University</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2025</span>
+                        <div class="award-text">
+                            <p class="award-title">Student Travel Grants Award</p>
+                            <p class="award-org">IEEE CIC/TPS/CogMI 2025 | $700</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2025</span>
+                        <div class="award-text">
+                            <p class="award-title">Robert B. France Fellowship in Computer Science</p>
+                            <p class="award-org">Department of Computer Science, CSU | $2,400</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2025</span>
+                        <div class="award-text">
+                            <p class="award-title">GSC Conference Travel Grant</p>
+                            <p class="award-org">Graduate Student Council, CSU | $500</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2025</span>
+                        <div class="award-text">
+                            <p class="award-title">Excellence in Teaching Award</p>
+                            <p class="award-org">Colorado State University</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2024</span>
+                        <div class="award-text">
+                            <p class="award-title">Best Paper Award – IEEE TPS-ISA 2024</p>
+                            <p class="award-org">"Resiliency Graphs: Modelling the Interplay between Cyber Attacks and System Failures through AI Planning"</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2024</span>
+                        <div class="award-text">
+                            <p class="award-title">Best Paper Award – IEEE QRS 2024</p>
+                            <p class="award-org">"The PIT-Cerberus Framework: Preventing Device Tampering During Transit" | $450</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2024</span>
+                        <div class="award-text">
+                            <p class="award-title">GSC Conference Travel Grant</p>
+                            <p class="award-org">Graduate Student Council, CSU | $500</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2024</span>
+                        <div class="award-text">
+                            <p class="award-title">GSC Conference Travel Grant</p>
+                            <p class="award-org">Graduate Student Council, CSU | $250</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2023</span>
+                        <div class="award-text">
+                            <p class="award-title">Certificate of Academic Excellence Award</p>
+                            <p class="award-org">Colorado State University</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2018</span>
+                        <div class="award-text">
+                            <p class="award-title">AICTE Post Graduate Scholarship</p>
+                            <p class="award-org">All India Council for Technical Education | ₹12,500/month for 2 years</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2014</span>
+                        <div class="award-text">
+                            <p class="award-title">Top Class Undergraduate Scholarship</p>
+                            <p class="award-org">MHRD, Indian Government | ₹75,000/year for 4 years</p>
+                        </div>
+                    </div>
+                    <div class="award-row">
+                        <span class="award-year">2013</span>
+                        <div class="award-text">
+                            <p class="award-title">Dr. B R Ambedkar Award</p>
+                            <p class="award-org">West Bengal State Government | ₹100,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="awards-subsection">
+                <h3>Research Funding</h3>
+                <div class="funding-list">
+                    <div class="funding-row">
+                        <p><strong>U.S. Office of Naval Research (ONR)</strong> | "Explainable AI for Prioritizing and Deploying Defenses for Cyber-Physical System Resiliency" | PhD Researcher | N000142612041</p>
+                    </div>
+                    <div class="funding-row">
+                        <p><strong>NSF IUCRC CCA</strong> | "Improving Cyber Security Robustness, Resiliency and Management From Devices to Enterprises" | PhD Researcher | CNS 1822118, CNS 2226232</p>
+                    </div>
+                    <div class="funding-row">
+                        <p><strong>U.S. Department of Energy</strong> | "Cyber Risk Research" | PhD Researcher | DE-NE0008986</p>
+                    </div>
+                    <div class="funding-row">
+                        <p><strong>NIST</strong> | PhD Researcher | 60NANB23D152</p>
+                    </div>
+                    <div class="funding-row">
+                        <p><strong>State of Colorado</strong> | PhD Researcher | SB 18-086</p>
+                    </div>
+                    <div class="funding-row">
+                        <p><strong>NSF</strong> | PhD Researcher | DMS 2123761</p>
+                    </div>
+                    <div class="funding-row">
+                        <p><strong>American Megatrends International LLC</strong> | "Hardware Root of Trust (HRoT) for Firmware Security" | PhD Researcher</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEACHING & MENTORING SECTION -->
+    <section id="teaching" class="teaching">
+        <div class="container">
+            <h2>Teaching & Mentoring</h2>
+            
+            <div class="teaching-subsection">
+                <h3>Teaching Experience</h3>
+                <div class="teaching-content">
+                    <h4>Colorado State University</h4>
+                    <p><strong>Graduate Teaching Assistant</strong> (Aug 2025 – Dec 2025)</p>
+                    <ul>
+                        <li>CS457 (Computer Networks and the Internet): recitation sessions, independent lectures (4 occasions), exam design</li>
+                        <li>CS557 (Advanced Networking): designed penetration-testing and binary reverse-engineering labs</li>
+                        <li>CS556 (Computer Security): student research and project support</li>
+                        <li><strong>Excellence in Teaching Award 2025</strong> for active-learning and Bloom's Taxonomy alignment</li>
+                    </ul>
+                    
+                    <h4>CSU Cybersecurity Summer Camp</h4>
+                    <p><strong>Instructor/Camp Designer</strong> (2023–2025)</p>
+                    <ul>
+                        <li>Designed and delivered week-long cybersecurity day camps for 35–50+ high school students annually</li>
+                        <li>Lectures, hands-on activities, and classroom exercises spanning three consecutive years</li>
+                    </ul>
+
+                    <h4>Office for Undergraduate Research and Artistry (OURA)</h4>
+                    <p><strong>Graduate Mentor</strong> (Feb 2026 – Jun 2026)</p>
+                    <ul>
+                        <li>Guided undergraduate mentees through research projects, academic advising, and critical-thinking development</li>
+                    </ul>
+
+                    <p><strong>Pedagogical Training:</strong> Completed CSU Institute for Learning and Teaching certifications in Best Practices in Teaching, Critical Thinking, Inclusive Pedagogy, and Accessible Electronic Content.</p>
+                </div>
+            </div>
+
+            <div class="teaching-subsection">
+                <h3>Mentoring Experience</h3>
+                <div class="mentees-grid">
+                    <div class="mentee-card">
+                        <p><a href="https://www.linkedin.com/in/wadia-ganim-67118a23b/">Wadia Ganim</a><br>
+                        <small>Engineer | Illinois ARCS | Singapore<br>(1 Research Paper)</small></p>
+                    </div>
+                    <div class="mentee-card">
+                        <p><a href="https://www.linkedin.com/in/sachin-kurup/">Sachin Kurup</a><br>
+                        <small>CSU Intern | BTech Computer Science<br>Amrita Vishwa Vidyapeetham</small></p>
+                    </div>
+                    <div class="mentee-card">
+                        <p><a href="https://www.linkedin.com/in/matthew-leman/">Matthew Leman</a><br>
+                        <small>Undergraduate | Computer Science<br>Colorado State University</small></p>
+                    </div>
+                    <div class="mentee-card">
+                        <p><a href="https://www.linkedin.com/in/saswat-subhankar-32a1aa350/">Saswat Subhankar</a><br>
+                        <small>Undergraduate Intern | Computer Science<br>Colorado State University</small></p>
+                    </div>
+                    <div class="mentee-card">
+                        <p><a href="https://www.linkedin.com/in/enock-apedjinou/">Enock Apedjinou</a><br>
+                        <small>OURA Mentee | Computer Science<br>Colorado State University</small></p>
+                    </div>
+                    <div class="mentee-card">
+                        <p><a href="https://www.linkedin.com/in/jason-simental-295651183/">Jason Simental</a><br>
+                        <small>Undergraduate Researcher | Computer Science<br>Colorado State University (1 Research Paper)</small></p>
+                    </div>
+                    <div class="mentee-card">
+                        <p><a href="https://www.linkedin.com/in/tyler-rios/">Tyler Rios</a><br>
+                        <small>Graduate Student | Computer Science<br>Denver University (1 Research Paper)</small></p>
+                    </div>
+                    <div class="mentee-card">
+                        <p><a href="https://www.linkedin.com/in/jack-sovereign-0b9752254/">Jack Sovereign</a><br>
+                        <small>Software Engineer | Ductus<br>(1 Research Paper)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE SECTION -->
+    <section id="service" class="service">
+        <div class="container">
+            <h2>Service</h2>
+            
+            <div class="service-subsection">
+                <h3>Reviewer Services</h3>
+                <div class="reviewer-content">
+                    <h4>Ad Hoc Journal Reviewer</h4>
+                    <ul>
+                        <li>IEEE Transactions on Big Data (2026) – 1 paper</li>
+                        <li>Journal of Electronic Testing Theory and Applications (2025) – 1 paper</li>
+                        <li>Journal of Nonlinear, Complex and Data Science (2024) – 1 paper</li>
+                    </ul>
+
+                    <h4>Ad Hoc Conference Reviewer</h4>
+                    <ul>
+                        <li>ICSE 2027 Dublin (Apr 25-May 1, 2027) – 4 papers</li>
+                        <li>ICECER'26 Istanbul (Dec 3-5, 2026) – 1 paper</li>
+                        <li>ICECCME'26 Bali (Oct 15-17, 2026) – 1 paper</li>
+                        <li>ESORICS'26 Rome (Sep 14-16, 2026) – 4 papers</li>
+                        <li>ACM SACMAT'26 Waterloo (Jul 8-10, 2026) – 3 papers</li>
+                        <li>ICECET'26 Rome (Jul 6-9, 2026) – 2 papers</li>
+                        <li>CODASPY'26 Frankfurt (Jun 23-25, 2026) – 1 paper</li>
+                        <li>ACDSA'26 Philippines (Feb 5-7, 2026) – 2 papers</li>
+                        <li>ASCENT Workshop at ICDCN'26 Japan (Jan 6-9, 2026) – 2 papers</li>
+                        <li>TPS-ISA 2025 Pittsburgh (Nov 11-14, 2025) – 1 paper</li>
+                        <li>ICECER'25 Madagascar (Dec 6-8, 2025) – 2 papers</li>
+                        <li>ETNCC'25 Windhoek (Aug 5-7, 2025) – 1 paper</li>
+                        <li>ACDSA'25 Turkey (Aug 7-9, 2025) – 2 papers</li>
+                        <li>ICECCME'25 Tanzania (Oct 16-19, 2025) – 1 paper</li>
+                        <li>ESORICS'25 Toulouse (Sep 22-26, 2025) – 3 papers</li>
+                        <li>ESORICS'24 Poland (Sep 16-20, 2024) – 1 paper</li>
+                        <li>CODASPY'24 Porto (Jun 19-21, 2024) – 1 paper</li>
+                        <li>ESORICS'23 Netherlands (Sep 25-29, 2023) – 1 paper</li>
+                        <li>ICISS'22 Beijing (Aug 26-28, 2022) – 1 paper</li>
+                        <li>DBSec'22 Rutgers (Jul 18-20, 2022) – 1 paper</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-subsection">
+                <h3>Professional Engagement</h3>
+                <div class="engagement-content">
+                    <ul>
+                        <li>Shadow PC at ICSE 2027 Dublin (Apr 25-May 1, 2027) <span class="upcoming-badge">(upcoming)</span></li>
+                        <li>TPC Member, 2nd ASCENT Workshop at ICDCN 2027 (Jan 4-7, 2027) <span class="upcoming-badge">(upcoming)</span></li>
+                        <li>TPC Member, PerRobotics 2027 at IEEE PerCom (Mar 2027, Goa) <span class="upcoming-badge">(upcoming)</span></li>
+                        <li>Registration Chair, 30th Annual Software Technology Conference (STC 2027, May 4-6, 2027) <span class="upcoming-badge">(upcoming)</span></li>
+                        <li>Human-AI ICS Cybersecurity Challenge Research Study (Nemesys Insights LLC, Jul-Aug 2026)</li>
+                        <li>Artifact Evaluation Program Committee, ACM SACMAT 2026 (Jul 8-10, 2026)</li>
+                        <li>TPC Member, ASCENT Workshop at ICDCN 2026 (Jan 6-9, 2026)</li>
+                        <li>Student Volunteer, IEEE TPS 2025 (Nov 2025)</li>
+                        <li>Review Committee Member, American Journal of Computer Science and Technology (Mar 2025)</li>
+                        <li>Cybersecurity Camp Summer Program Instructor (Jul 2025, 50+ HS students)</li>
+                        <li>Cybersecurity Camp Summer Program (Jul 2024, 45+ HS students)</li>
+                        <li>Cybersecurity Camp Summer Program (Jul 2023, 35+ HS students)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TALKS SECTION -->
+    <section id="talks" class="talks">
+        <div class="container">
+            <h2>Talks & Presentations</h2>
+            
+            <div class="talks-subsection">
+                <h3>Invited Talks</h3>
+                <div class="talks-list">
+                    <div class="talk-item">
+                        <span class="talk-year">July 2026</span>
+                        <div class="talk-details">
+                            <p><strong>CAE Community of Practice Cyber Research</strong><br>
+                            <em>"i-EXAM. A running case study"</em></p>
+                        </div>
+                    </div>
+                    <div class="talk-item">
+                        <span class="talk-year">March 2026</span>
+                        <div class="talk-details">
+                            <p><strong>Universitas Sam Ratulangi, Manado, Indonesia</strong><br>
+                            <em>"From Classical Systems to Intelligent Secure and Data-Centric Computing"</em></p>
+                        </div>
+                    </div>
+                    <div class="talk-item">
+                        <span class="talk-year">October 2025</span>
+                        <div class="talk-details">
+                            <p><strong>Northern Colorado ISSA, Lory Centre CSU, Fort Collins, CO</strong><br>
+                            <em>"AI-Powered Cyber Security & Cyber Resiliency"</em></p>
+                        </div>
+                    </div>
+                    <div class="talk-item">
+                        <span class="talk-year">July 2024</span>
+                        <div class="talk-details">
+                            <p><strong>TMI Summer Talks, Fort Collins, CO</strong><br>
+                            <em>"The PIT-Cerberus Framework: Preventing Device Tampering During Transit"</em></p>
+                        </div>
+                    </div>
+                    <div class="talk-item">
+                        <span class="talk-year">October 2023</span>
+                        <div class="talk-details">
+                            <p><strong>NSF IUCRC Center for CCAA, CSU, Fort Collins, CO</strong><br>
+                            <em>"Remote Firmware Updates: Preventing Firmware Tampering"</em></p>
+                        </div>
+                    </div>
+                    <div class="talk-item">
+                        <span class="talk-year">April 2023</span>
+                        <div class="talk-details">
+                            <p><strong>NSF IUCRC Center for CCAA, George Mason University, Fairfax, VA</strong><br>
+                            <em>"Protection in Transit – What do we solve?"</em></p>
+                        </div>
+                    </div>
+                    <div class="talk-item">
+                        <span class="talk-year">October 2022</span>
+                        <div class="talk-details">
+                            <p><strong>NSF IUCRC Center for CCAA, UNCC, Charlotte</strong><br>
+                            <em>"Protection in Transit: Enabling Tripartite Trust using a Mesh of Trusted Agents"</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="talks-subsection">
+                <h3>Conference & Poster Presentations</h3>
+                <p>17 conference and poster presentations at international venues including ICAPS, IEEE TPS-ISA, IEEE QRS, ETNCC, NSF IUCRC centers, and CSU Graduate Showcases.</p>
+                <ul>
+                    <li><strong>6 conference presentations</strong>: i-EXAM, CoDICE, Resiliency Graphs, Adversarial Attacks, PIT-Cerberus, Hybrid Encryption</li>
+                    <li><strong>11 poster presentations</strong>: Firmware security, Resiliency analysis, and related topics at NSF IUCRC meetings, Graduate Showcases, and workshops</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            
+            <div class="skills-group">
+                <h3>Languages</h3>
+                <p><strong>Native:</strong> Bengali | <strong>Other:</strong> English, Hindi</p>
+            </div>
+
+            <div class="skills-group">
+                <h3>Programming & Development</h3>
+                <div class="skills-tags">
+                    <span class="skill-chip">C/C++</span>
+                    <span class="skill-chip">PDDL</span>
+                    <span class="skill-chip">Python</span>
+                    <span class="skill-chip">JavaScript</span>
+                    <span class="skill-chip">SQL</span>
+                    <span class="skill-chip">Java</span>
+                    <span class="skill-chip">Git</span>
+                    <span class="skill-chip">Verilog HDL</span>
+                    <span class="skill-chip">LaTeX</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Libraries & ML Algorithms</h3>
+                <div class="skills-tags">
+                    <span class="skill-chip">TensorFlow</span>
+                    <span class="skill-chip">PyTorch</span>
+                    <span class="skill-chip">NumPy</span>
+                    <span class="skill-chip">Pandas</span>
+                    <span class="skill-chip">Matplotlib</span>
+                    <span class="skill-chip">Scikit-Learn</span>
+                    <span class="skill-chip">Seaborn</span>
+                    <span class="skill-chip">ART</span>
+                    <span class="skill-chip">cleverhans</span>
+                    <span class="skill-chip">LLM</span>
+                    <span class="skill-chip">CtmNN</span>
+                    <span class="skill-chip">Decision Trees</span>
+                    <span class="skill-chip">Transformers</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Databases & Operating Systems</h3>
+                <div class="skills-tags">
+                    <span class="skill-chip">PostgreSQL</span>
+                    <span class="skill-chip">MySQL</span>
+                    <span class="skill-chip">MongoDB</span>
+                    <span class="skill-chip">Kali</span>
+                    <span class="skill-chip">Linux</span>
+                    <span class="skill-chip">Mac OS</span>
+                    <span class="skill-chip">Windows</span>
+                    <span class="skill-chip">Hypervisors</span>
+                    <span class="skill-chip">QEMU</span>
+                    <span class="skill-chip">VirtualBox</span>
+                    <span class="skill-chip">VMware</span>
+                    <span class="skill-chip">Docker</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-tags">
+                    <span class="skill-chip">Splunk</span>
+                    <span class="skill-chip">ELK</span>
+                    <span class="skill-chip">CAN</span>
+                    <span class="skill-chip">STRIDE</span>
+                    <span class="skill-chip">GNS3</span>
+                    <span class="skill-chip">TLA+</span>
+                    <span class="skill-chip">Wazuh</span>
+                    <span class="skill-chip">Caldera</span>
+                    <span class="skill-chip">OPNsense</span>
+                    <span class="skill-chip">pfSense</span>
+                    <span class="skill-chip">CPN</span>
+                    <span class="skill-chip">Wireshark</span>
+                    <span class="skill-chip">Google Colab</span>
+                    <span class="skill-chip">Heroku</span>
+                    <span class="skill-chip">Azure</span>
+                    <span class="skill-chip">Jupyter Notebook</span>
+                    <span class="skill-chip">UPPAAL</span>
+                    <span class="skill-chip">Syft</span>
+                    <span class="skill-chip">x86</span>
+                    <span class="skill-chip">ARM</span>
+                    <span class="skill-chip">MITRE ATT&CK</span>
+                    <span class="skill-chip">Suricata</span>
+                    <span class="skill-chip">Procmon</span>
+                    <span class="skill-chip">Grype</span>
+                    <span class="skill-chip">OpenVAS</span>
+                    <span class="skill-chip">Tenable</span>
+                    <span class="skill-chip">Active Directory</span>
+                    <span class="skill-chip">LLVM</span>
+                    <span class="skill-chip">NIST 800-61</span>
+                    <span class="skill-chip">ISO 27035</span>
+                    <span class="skill-chip">REMnux</span>
+                    <span class="skill-chip">Burp Suite</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Open Source Projects</h3>
+                <div class="skills-tags">
+                    <span class="skill-chip">HexStrike AI</span>
+                    <span class="skill-chip">Project Cerberus</span>
+                    <span class="skill-chip">OpenBMC-libpldm</span>
+                    <span class="skill-chip">VAL</span>
+                    <span class="skill-chip">Forbid Iterator</span>
+                    <span class="skill-chip">Fast Downward</span>
+                    <span class="skill-chip">Open-DICE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            
+            <div class="contact-info">
+                <p><strong>Email (personal):</strong> <a href="mailto:rakeshpodder3@gmail.com">rakeshpodder3@gmail.com</a></p>
+                <p><strong>Email (CSU):</strong> <a href="mailto:rakesh.podder@colostate.edu">rakesh.podder@colostate.edu</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+19707328524">+1 (970) 732-8524</a></p>
+                <p><strong>Location:</strong> Fort Collins, Colorado, USA</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rakesh-podder-09181b7b/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/cryptoknight13" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Rakesh Podder. Last updated July 2026.</p>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
 </body>
 </html>

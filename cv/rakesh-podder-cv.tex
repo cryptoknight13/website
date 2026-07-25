@@ -1,0 +1,794 @@
+% ============================================================
+%  Rakesh Podder – Curriculum Vitae
+%  Restructured version, July 2026
+% ============================================================
+
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgpagella}
+\usepackage{microtype}
+\usepackage[
+  a4paper,
+  top=1.75cm, bottom=2.0cm,
+  left=2.20cm, right=2.20cm
+]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, urlcolor=cvnavy, linkcolor=cvnavy]{hyperref}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{calc}
+\usepackage{tfrupee}
+
+% ---- colours: single accent (navy) ----
+\definecolor{cvred}{HTML}{1F497D}      % section headings & rules — now navy, matches contact accent
+\definecolor{cvnavy}{HTML}{1F497D}     % navy – contact links
+\definecolor{cvlinerule}{HTML}{B4C3D2} % light blue-gray – rule under header
+\definecolor{cvgray}{HTML}{7F807F}     % gray – pipe separator & footer
+
+% ---- section: navy bold 11.92pt + navy rule ----
+\titleformat{\section}
+  {\fontsize{11.92}{14.3}\selectfont\bfseries\color{cvred}}
+  {}{0em}{}
+  [{\color{cvred}\vspace{1pt}\hrule height 0.5pt}]
+\titlespacing{\section}{0pt}{14pt}{5pt}
+
+% ---- subsection: bold italic black ----
+\titleformat{\subsection}
+  {\normalsize\bfseries\itshape\color{black}}
+  {}{0em}{}
+\titlespacing{\subsection}{0pt}{7pt}{3pt}
+
+\newlength{\Lcol}\setlength{\Lcol}{3.85cm}
+\newlength{\Rcol}\setlength{\Rcol}{\textwidth-\Lcol-0.45cm}
+
+\newcommand{\cventry}[2]{%
+  \noindent
+  \begin{minipage}[t]{\Lcol}%
+    \fontsize{10.0}{13}\selectfont\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000
+    #1%
+  \end{minipage}%
+  \hspace{0.45cm}%
+  \begin{minipage}[t]{\Rcol}%
+    \fontsize{10.87}{13.5}\selectfont\raggedright
+    #2%
+  \end{minipage}%
+  \par\vspace{5pt}%
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{\fontsize{9.92}{12}\selectfont\color{cvgray}Rakesh Podder}
+\fancyhead[R]{\fontsize{9.92}{12}\selectfont\color{cvgray}July 2026}
+\fancyfoot[R]{\fontsize{8.97}{11}\selectfont\color{cvgray}\thepage}
+
+\begin{document}
+
+% ==============================================================
+%  HEADER BLOCK
+% ==============================================================
+\begin{center}
+  {\fontsize{17.16}{21}\selectfont\bfseries Rakesh Podder}\\[2pt]
+  {\fontsize{9.92}{12}\selectfont
+    \textbf{Email: }\textcolor{cvnavy}{rakeshpodder3@gmail.com}%
+    \enspace\textcolor{cvgray}{|}\enspace
+    \textbf{Website: }\textcolor{cvnavy}{\href{https://cryptoknight13.github.io/rpodder/}{Rakesh Podder}}
+    \enspace\textcolor{cvgray}{|}\enspace
+    \textbf{LinkedIn: }\textcolor{cvnavy}{\href{https://www.linkedin.com/in/rakesh-podder-09181b7b/}{Rakesh Podder}} \\
+    \textbf{CSU Email: }\textcolor{cvnavy}{rakesh.podder@colostate.edu}
+    \textbf{Mobile: }\textcolor{cvnavy}{+1 (970)732-8524}
+    \enspace\textcolor{cvgray}{|}\enspace
+    \textbf{Google Scholar: }\textcolor{cvnavy}{\href{https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en}{Rakesh Podder}}%
+  }
+\end{center}
+\vspace{5pt}
+
+% ==============================================================
+%  BIOGRAPHY
+% ==============================================================
+\section{Biography}
+
+{\fontsize{10.87}{13.5}\selectfont
+I am a Ph.D. candidate in Computer Science at Colorado State University, advised by Prof. Indrajit Ray. My research develops AI-planning-based frameworks for the security and resiliency analysis of cyber-physical systems, centered on three connected contributions: attack-connectivity graph analysis (SPEAR and i-EXAM), unified Resiliency and Safety Graph frameworks for modeling cascading IT-OT failures, and SERA, a re-programmable simulation testbed for explainable resiliency analysis. Alongside this work, I develop CAPE, a context-aware vulnerability prioritization engine, as an independent research line. From 2024 to 2026, I served as a Foreign Research Scientist at the National Institute of Standards and Technology (NIST), collaborating with Irena Bojanova on the Bugs Framework to formalize the classification of security bugs, CVEs, and CWEs. My research has been supported by the Office of Naval Research, the National Science Foundation, and the Department of Energy, and recognized with \textbf{\textit{Best Paper awards}} at \textbf{\textit{IEEE TPS-ISA 2024}} and \textbf{\textit{IEEE QRS 2024}}. Alongside research, I teach and mentor at CSU as a graduate teaching assistant and research mentor, designing hands-on security labs and lecturing independently when called on. Before CSU, I completed an M.E. in Electrical Engineering at Jadavpur University (Gold Medalist) and a B.Tech at the Indian Institute of Technology, Patna, followed by industry experience at Infosys and Cognizant.}
+
+% ==============================================================
+%  CAREER OBJECTIVE
+% ==============================================================
+\section{Career Objective}
+
+{\fontsize{10.87}{13.5}\selectfont
+I am seeking a tenure-track Assistant Professor position where I can build an independent, externally funded research program that extends my work in planning-based cyber-physical system security into hardware and firmware security --- building on my Electrical Engineering background (M.E., Jadavpur University; B.Tech, IIT Patna) and my existing work on Hardware Root of Trust and firmware attestation (S-RFUP, PIT, CoDICE) --- alongside critical infrastructure and software supply chain security, and to translate that research into hands-on, project-based coursework. Having contributed to funded projects supported by ONR, NSF, and DOE as a graduate researcher, I am positioned to pursue independent grant funding early in a faculty career. My approach to teaching is grounded in active-learning methods: I designed penetration-testing and reverse-engineering labs for CS557 and led the CSU Cybersecurity Summer Camp for three consecutive years, and I look forward to building a similarly hands-on curriculum in systems and hardware security while mentoring the next generation of researchers and professionals in the field.}
+
+% ==============================================================
+%  RESEARCH INTERESTS
+% ==============================================================
+\section{Research Interests}
+
+{\fontsize{10.87}{13.5}\selectfont
+Cyber-Physical System Resiliency \textbullet{} Attack Graphs Modeling \textbullet{} Vulnerability Analysis \textbullet{} AI Planning \textbullet{} Firmware Security \textbullet{} Hardware Security \textbullet{} Hardware Root of Trust (HRoT) \textbullet{} Formal Security Verification  \textbullet{} Large Language Models (LLMs)  \textbullet{} Adversarial Machine Learning \textbullet{} Explainable AI (XAI) \textbullet{} Threat Intelligence \textbullet{} Intrusion Detection  Network Security \textbullet{}IoT Security \textbullet{} Financial Fraud Detection \textbullet{} Graph-theoretic Security Analysis \textbullet{} AI Ethics \textbullet{} Responsible AI \textbullet{} Critical Infrastructure Security \textbullet{} Software Bill of Materials (SBOM) \textbullet{} Supply Chain Security \textbullet{} Cyber Security Education
+}
+
+% ==============================================================
+%  EDUCATION AND QUALIFICATIONS
+% ==============================================================
+\section{Education and Qualifications}
+
+\cventry{2022 -- present}{%
+  \textbf{\color{cvred} Ph.D. Candidate}\\ Computer Science Department\\ Colorado State University, Fort Collins, CO, USA 80521 \\ CGPA: 4.00/4.00}
+
+\cventry{2022 -- 2025}{%
+  \textbf{\color{cvred}Master of Science (Thesis)}\\ Computer Science Department \\ Colorado State University, Fort Collins, CO, USA  \\ CGPA: 4.00/4.00 \\ \textit{Thesis}: \href{https://www.proquest.com/openview/05e80ff68a764c0b737f3562a2453690/1?pq-origsite=gscholar&cbl=18750&diss=y}{Preventing Malicious Modifications to Firmware Using Hardware Root of Trust (HRoT)}}
+
+\cventry{2018 -- 2020}{%
+  \textbf{\color{cvred}Master of Engineering (Thesis)}\\ Electrical Engineering Department \\ Jadavpur University, Kolkata, West Bengal, India \\ CGPA: 9.11/10 \quad \textit{(Gold Medalist)} \\ \textit{Thesis}: \textit{\textbf{Data Security of IoT Enabled Autonomous Robots from the Perspective of its Various Controlled Actions}}}
+
+\cventry{2013 -- 2017}{%
+  \textbf{\color{cvred}Bachelor of Technology}\\ Electrical Engineering Department \\ Indian Institute of Technology, Patna, Bihar, India  \\ CGPA: 7.5/10 \\ \textit{Dissertation}: \textit{\textbf{Low Cost Signal Generator}}}
+
+% ==============================================================
+%  PUBLICATIONS
+% ==============================================================
+\section{Publications}
+
+\subsection{\color{cvred}Peer-Reviewed Conference}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+
+\item   \textbf{\color{cvred}R. Podder}, F. G. Arellano and I. Ray, ``Hidden Amplifiers: Cross-Level Risk in Software Supply Chains,'' in \textit{Proceedings of the 42nd International Conference on Software Maintenance and Evolution (ICSME)}, 2026. [\textbf{Accepted}].
+
+\item \textbf{\color{cvred}R. Podder} and I. Ray, ``SERA – An AI Driven Re-Programmable Simulation Environment for Explainable Resiliency Analysis in Cyber-Physical Systems,'' in \textit{Proceedings of the 6th ACM Workshop on Secure and Trustworthy Cyber-Physical Systems (SaT-CPS '26)}, Frankfurt am Main, Germany, June 23--25, 2026. \href{https://doi.org/10.1145/3806008.3811708}{\color{cvgray}10.1145/3806008.3811708}
+
+\item \textbf{\color{cvred}R. Podder}, W. Ganim, S. Sreedharan, I. Ray, and I. Ray, ``i-EXAM: Instructable and Explainable Attack
+Connectivity Graph Modeler,'' in \textit{Proceedings of the International Conference on Automated Planning and Scheduling
+(ICAPS '26)}, 2026. (\textbf{*Demo Paper.})
+
+\item \textbf{\color{cvred}R. Podder}, J. Simental, E. Azizli, B. Mantha and I. Ray, ``CoDICE: Roll the DICE for Firmware Attestation,'' in \textit{Proceedings of 2025 IEEE 7th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)}, Pittsburgh, PA, USA, 2025, pp. 183-196. \href{https://ieeexplore.ieee.org/abstract/document/11410223}{\color{cvgray}10.1109/TPS-ISA67132.2025.00028}
+
+\item T. Rhaimi, H. Aghayarzadeh, \textbf{\color{cvred}R. Podder} and I. Ray, ``Formal Specification and Verification of Protection in Transit (PIT) Protocol Using UPPAAL.'' in \textit{Proceedings of 2025 22nd Annual International Conference on Privacy, Security, and Trust (PST)}. Fredericton, NB, Canada, 2025, pp. 1-6. \href{https://ieeexplore.ieee.org/abstract/document/11268865}{\color{cvgray}10.1109/PST65910.2025.11268865}
+
+\item \textbf{\color{cvred}R. Podder} T. Caglar, S. K. Bashir, S. Sreedharan, I. Ray, and I. Ray, ``SPEAR: Security Posture Evaluation using AI Planner-Reasoning on Attack-Connectivity Hypergraphs.'' in \textit{Proceedings of the 30th ACM Symposium on Access Control Models and Technologies (SACMAT '25)}. Association for Computing Machinery, New York, NY, USA, 62–73. \href{https://doi.org/10.1145/3734436.3734451}{\color{cvgray}10.1145/3734436.3734451}
+
+\item R. Talukdar, \textbf{\color{cvred}R. Podder}, and I. Ray, ``VKG2AG : Generating Automated Knowledge-Enriched Attack Graph (AG) from Vulnerability Knowledge Graph (VKG).'' in \textit{Proceedings of the 22nd International Conference on Security and Cryptography (SECRYPT 2025)}. SciTePress, pp. 420-428. \href{https://www.scitepress.org/Papers/2025/135267/135267.pdf}{\color{cvgray}10.5220/0013526700003979}
+
+\item \textbf{\color{cvred}R. Podder}, T. Rios, I. Ray, P. Raman, and S. Righi, ``S-RFUP: Secure Remote Firmware Update Protocol.'' in \textit{Proceedings of the International Conference on Information Systems Security (ICISS 2024)}. Lecture Notes in Computer Science, Cham, Springer Nature Switzerland, vol 15416, pp. 42-62. \href{https://doi.org/10.1007/978-3-031-80020-7_3}{\color{cvgray}10.1007/978-3-031-80020-7\_3}
+
+\item S. K. Bashir\textbf{*}, \textbf{\color{cvred}R. Podder}\textbf{*}, S. Sreedharan, I. Ray and I. Ray, ``Resiliency Graphs: Modelling the Interplay between Cyber Attacks and System Failures through AI Planning,'' in \textit{Proceedings of the 2024 IEEE 6th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA)}, Washington, DC, USA, 2024, pp. 292-302. (\textbf{*Equal contribution.}) \href{https://doi.org/10.1109/TPS-ISA62245.2024.00041}{\color{cvgray}10.1109/TPS-ISA62245.2024.00041} \textit{(Best Paper Award)}
+
+\item \textbf{\color{cvred}R. Podder} and S. Ghosh, ``Impact of White-Box Adversarial Attacks on Convolutional Neural Networks.'' in \textit{Proceedings of the 2024 International Conference on Emerging Trends in Networks and Computer Communications (ETNCC)}, Windhoek, Namibia, 2024, pp. 1-9. \href{https://doi.org/10.1109/ETNCC63262.2024.10767521}{\color{cvgray}10.1109/ETNCC63262.2024.10767521}
+
+\item \textbf{\color{cvred}R. Podder}, J. Sovereign, I. Ray, M. B. Santharam and S. Righi, ``The PIT-Cerberus Framework: Preventing Device Tampering During Transit.'' in \textit{Proceedings of the 2024 IEEE 24th International Conference on Software Quality, Reliability and Security (QRS)}, Cambridge, United Kingdom, 2024, pp. 584-595. \href{https://doi.org/10.1109/QRS62785.2024.00064}{\color{cvgray}10.1109/QRS62785.2024.00064} \textit{(Best Paper Award)}
+
+\item I. Ray, S. Sreedharan, \textbf{\color{cvred}R. Podder}, S. K. Bashir and I. Ray, ``Explainable AI for Prioritizing and Deploying Defenses for Cyber-Physical System Resiliency.'' in \textit{Proceedings of the 2023 5th IEEE International Conference on Trust, Privacy and Security in Intelligent Systems and Applications (TPS-ISA)}, Atlanta, GA, USA, 2023, pp. 184-192. \href{https://doi.org/10.1109/TPS-ISA58951.2023.00032}{\color{cvgray}10.1109/TPS-ISA58951.2023.00032}
+
+\item \textbf{\color{cvred}R. Podder} and R. K. Barai, ``Hybrid Encryption Algorithm for the Data Security of ESP32 based IoT-enabled Robots.'' in \textit{Proceedings of the 2021 Innovations in Energy Management and Renewable Resources(52042)}, Kolkata, India, 2021, pp. 1-5. \href{https://doi.org/10.1109/IEMRE52042.2021.9386824}{\color{cvgray}10.1109/IEMRE52042.2021.9386824}
+
+\end{enumerate}
+
+\subsection{\color{cvred}Peer-Reviewed Journal}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+
+\item \textbf{\color{cvred}R. Podder}, M. Abdelgawad, I. Ray, I. Ray, M. Santharam, and S. Righi, ``Correctness and security analysis of the protection in transit (PIT) protocol.'' \textit{Journal of Systems and Software}, 230, p.112501, 2025. \href{https://doi.org/10.1016/j.jss.2025.112501}{\color{cvgray}10.1016/j.jss.2025.112501}
+
+\item R. Muslim, R. Delfianti, C. Harsito, S. Palaloi, N. A. Aryono, A. Y. Indrarahmana, S. R. Joshua, and \textbf{\color{cvred}R. Podder}, ``Optimizing the Integration of Wind and Solar Power for Hybrid Electrical Energy in High-Rise Building Energy Systems,'' \textit{ Engineered Science}, 35, p.1555, 2025. \href{http://dx.doi.org/10.30919/es1555}{\color{cvgray}10.30919/es1555}
+
+\item E. Rovianto, R. Delfianti, F. Minelli, C. Harsito, \textbf{\color{cvred}R. Podder} and S. R. Joshua, ``Crossflow Thermoelectric Kitchen Hood System for Enhancing Sustainable Energy in Buildings,'' \textit{Civil Engineering Journal},  12(6), 2402–2414. \href{https://doi.org/10.28991/CEJ-2026-012-06-014}{\color{cvgray}10.28991/CEJ-2026-012-06-014}
+
+\end{enumerate}
+
+\subsection{\color{cvred}Peer-Reviewed Conference Abstract}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+
+\item I. Ray, \textbf{\color{cvred}R. Podder}, S. Sreedharan, I. Ray, and S. K. Bashir, ``iEXAM: AI-Driven Cyber Security with Explainability.'' in \textit{2026 CAE Cybersecurity Community Symposium}, Pittsburgh, Pennsylvania, 2026, pp. 73. \href{https://8505d155-f364-4b90-865e-959b0628f5da.usrfiles.com/ugd/8505d1_9e45d49080d142ae941ae6fdac82b871.pdf}{Abstract Link}
+
+\item I. Ray, S. K. Bashir, \textbf{\color{cvred}R. Podder}, S. Sreedharan, and I. Ray, ``From Cyber Attacks to System Recovery:
+A Resiliency-Centered View of Cyber-Physical Systems Security.'' in \textit{2026 CAE Cybersecurity Community Symposium}, Pittsburgh, Pennsylvania, 2026, pp. 74. \href{https://8505d155-f364-4b90-865e-959b0628f5da.usrfiles.com/ugd/8505d1_9e45d49080d142ae941ae6fdac82b871.pdf}{Abstract Link}
+
+\end{enumerate}
+
+\subsection{\color{cvred}Submitted Conference}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+
+\item  F. G. Arellano and \textbf{\color{cvred}R. Podder}, ``From Fix Commits to Vulnerable Functions: Automated Patch Mining for Function-Level CVE Resolution,'' in \textit{Proceedings of the 2026 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED)}, 2026, Co-located with ACM CCS 2026.
+
+\item  \textbf{\color{cvred}R. Podder}, V. Koscinski and I. Ray, ``CAPE — Context-Aware Prioritization Engine for Vulnerability Scoring and Management,'' in \textit{Proceedings of the 49th International Conference on Software Engineering (ICSE)}, 2027.
+
+\item  S. K. Bashir, P. D. Hopkins, \textbf{\color{cvred}R. Podder}, S. Shreedharan, I. Ray and I. Ray, ``AWARE-RG: Abstraction Aware Explanation of Resiliency Graphs for Cyber Physical Systems,'' in \textit{Proceedings of the 48th IEEE Symposium on
+Security and Privacy}, 2027.
+
+\item  \textbf{\color{cvred}R. Podder}, P. D. Hopkins, S. K. Bashir, S. Shreedharan, I. Ray and I. Ray, ``Safety Graph: When Safety Responses Become Attack Surfaces in Cyber-Physical Systems,'' in \textit{Proceedings of the Network and Distributed System Security (NDSS) Symposium}, 2026.
+
+\end{enumerate}
+
+\subsection{\color{cvred}Submitted Journal}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+\item S. K. Bashir, \textbf{\color{cvred}R. Podder}, S. Sreedharan, I. Ray, and I. Ray, ``AFROT: A Framework for Modeling and Analyzing Cascading Failures in CPS Triggered by Cyber Attacks,'' \textit{IEEE Transactions on Dependable and Secure Computing}, 2026.
+
+\item E. Rovianto, S. D. Prasetyo, C. Harsito, S. R. Joshua, \textbf{\color{cvred}R. Podder}, A. Y. Indrarahman, and A. N. S.
+Permata, ``Artificial Intelligence–Based Energy Management in Hybrid Biomass–Storage–EV Microgrids: A
+Systematic Review and Meta-Analysis,'' \textit{Green Technologies and Sustainability}, 2026.
+
+\end{enumerate}
+
+% ==============================================================
+%  PATENTS
+% ==============================================================
+\section{Patents}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+\item \textbf{\color{cvred}R. Podder}, S. K. Bashir, S. Sreedharan, I. Ray, and I. Ray, ``Instructable AI Agent For Explainable Cybersecurity Planning and Analysis,'' U.S. Provisional Patent Application Serial No. 63/839,787, filed on July 7, 2025 [APPROVED].
+
+\item \textbf{\color{cvred}R. Podder}, S. K. Bashir, S. Sreedharan, I. Ray, and I. Ray, ``System and Methods for Building an Instructable AI Agent for Explainable Cybersecurity Planning and Analysis,'' U.S. Full Patent Application, filed on July 7, 2026 [SUBMITTED].
+
+\end{enumerate}
+
+% ==============================================================
+%  RESEARCH FUNDING
+% ==============================================================
+\section{Research Funding}
+
+\textbf{\color{cvred}U.S. Office of Naval Research (ONR)}\\
+  Explainable AI for Prioritizing and Deploying Defenses for Cyber-Physical System Resiliency\\
+  Role: PhD Researcher (PIs: Indrajit Ray, Indrakshi Ray, Sarath Shreedharan) \\
+  Contract No. N000142612041 (\textbf{*Helped on writing the Grant}) \\
+  Role: Assisted with the ONR proposal draft and foundational technology, and provided preliminary data.
+
+\medskip
+\textbf{\color{cvred}IUCRC CCA - U.S. National Science Foundation (NSF)}\\
+  Improving Cyber Security Robustness, Resiliency and Management From Devices to Enterprises\\
+  Role: PhD Researcher (PIs: Indrajit Ray, Indrakshi Ray)\\
+  Grant No. CNS 1822118 and CNS 2226232
+
+\medskip
+\textbf{\color{cvred}U.S. Department of Energy (DoE)}\\
+  Cyber Risk Research\\
+  Role: PhD Researcher (PI: Indrakshi Ray)\\
+  Contract No. DE-NE0008986
+
+\medskip
+\textbf{\color{cvred}National Institute of Standards and Technology (NIST)}\\
+  Role: PhD Researcher (PIs: Indrajit Ray, Indrakshi Ray)\\
+  Award No. 60NANB23D152.
+
+\medskip
+\textbf{\color{cvred}State of Colorado}\\
+  Role: PhD Researcher (PI: Indrakshi Ray)\\
+  Grant \#SB 18-086.
+
+\medskip
+\textbf{\color{cvred}U.S. National Science Foundation (NSF)}\\
+  Role: PhD Researcher (PIs: Indrajit Ray, Indrakshi Ray)\\
+  Award No. DMS 2123761
+
+\medskip
+\textbf{\color{cvred}American Megatrends International LLC}\\
+  Hardware Root of Trust (HRoT) for Firmware Security\\
+  Role: PhD Researcher (PIs: Indrajit Ray)
+
+% ==============================================================
+%  AWARDS
+% ==============================================================
+\section{Awards/Honors Received}
+
+\cventry{2026}{%
+  \textbf{\color{cvred}``Computer Science Graduate Fellowship'' Award}\\  College of Natural Sciences, Colorado State University \\ Prize: \textdollar\, 6250}
+
+\cventry{2026}{%
+  \textbf{\color{cvred}``Certificate of Academic Excellence'' Award}\\  Colorado State University}
+
+\cventry{2025}{%
+  \textbf{\color{cvred}``Student Travel Grants'' Award}\\  IEEE CIC/TPS/CogMI 2025 Conference \\ Prize: \textdollar\, 700}
+
+\cventry{2025}{%
+  \textbf{\color{cvred}``Robert B. France Fellowship in Computer Science'' Award}\\  Department of Computer Science \\ Colorado State University\\ Prize: \textdollar\, 2400}
+
+\cventry{2025}{%
+  \textbf{\color{cvred}``GSC Conference Travel Grant'' Award}\\  Graduate Student Council \\ Colorado State University\\ Prize: \textdollar\, 500}
+
+\cventry{2025}{%
+  \textbf{\color{cvred}``Excellence in Teaching'' Award}\\ Colorado State University}
+
+\cventry{2024}{%
+  \textbf{\color{cvred}``Best Paper'' Award}\\  IEEE TPS-ISA 2024 Conference\\ The Darcy, D.C., USA \\ \textbf{Paper}: \href{https://doi.org/10.1109/TPS-ISA62245.2024.00041}{Resiliency Graphs: Modelling the Interplay between Cyber Attacks and System Failures through AI Planning}}
+
+\cventry{2024}{%
+  \textbf{\color{cvred}``Best Paper'' Award}\\  IEEE QRS 2024 Conference \\ Churchill College, Cambridge, United Kingdom \\ \textbf{Paper}: \href{https://doi.org/10.1109/QRS62785.2024.00064}{The PIT-Cerberus Framework: Preventing Device Tampering During Transit} \\ Prize: \textdollar\, 450}
+
+\cventry{2024}{%
+  \textbf{\color{cvred}``GSC Conference Travel Grant'' Award}\\  Graduate Student Council \\ Colorado State University\\ Prize: \textdollar\, 500}
+
+\cventry{2024}{%
+  \textbf{\color{cvred}``GSC Conference Travel Grant'' Award}\\  Graduate Student Council \\ Colorado State University\\ Prize: \textdollar\, 250}
+
+\cventry{2023}{%
+  \textbf{\color{cvred}``Certificate of Academic Excellence'' Award}\\  Colorado State University}
+
+\cventry{2018}{%
+  \textbf{\color{cvred}``AICTE Post Graduate Scholarship''}\\ All India Council for Technical Education, Indian Government \\Prize: \rupee 12,500/month for 2 years.}
+
+\cventry{2014}{%
+  \textbf{\color{cvred}``Top Class Undergraduate Scholarship''}\\ Ministry of Human Resource Development (MHRD), Indian Government \\Prize: \rupee 75,000/Year for 4 years.}
+
+\cventry{2013}{%
+  \textbf{\color{cvred}``Dr. B R Ambedkar'' Award}\\ West Bengal State Government, India \\Prize: \rupee 100,000.}
+
+% ==============================================================
+%  PROFESSIONAL APPOINTMENTS
+% ==============================================================
+\section{Professional Appointments}
+
+\cventry{Jan.\ 2026 -- present\\Colorado (USA)}{%
+  \textbf{\color{cvred}Graduate Research Assistant} \\Colorado State University \\ Department of Computer Science}
+
+\cventry{Feb.\ 2026 -- Jun.\ 2026\\Colorado (USA)}{%
+  \textbf{\color{cvred}Graduate Mentor} \\ {\href{https://tilt.colostate.edu/oura/}{Office for Undergraduate Research and Artistry}}\\Colorado State University, Fort Collins, CO, USA}
+
+\cventry{May\ 2024 -- May\ 2026\\Gaithersburg (USA)}{%
+  \textbf{\color{cvred}Foreign Research Scientist} \\{\href{https://www.nist.gov/}{National Institute of Standards and Technology (NIST)}} \\ Department of Computer Science}
+
+\cventry{Aug\ 2025 -- Dec.\ 2025\\Colorado (USA)}{%
+  \textbf{\color{cvred}Graduate Teaching Assistant} \\Colorado State University \\ Department of Computer Science}
+
+\cventry{May\ 2022 -- Aug.\ 2025\\Colorado (USA)}{%
+  \textbf{\color{cvred}Graduate Research Assistant} \\Colorado State University \\ Department of Computer Science}
+
+\cventry{Jun.\ 2021 -- Apr.\ 2022\\Bhubaneswar (India)}{%
+  \textbf{\color{cvred}Systems Engineer} \\Infosys Ltd.}
+
+\cventry{Nov.\ 2020 -- May\ 2021\\Kolkata (India)}{%
+  \textbf{\color{cvred}Programmer Analyst} \\Cognizant Technology Solutions India Private Ltd.}
+
+\cventry{May\ 2016 -- July\ 2016\\Bokaro (India)}{%
+  \textbf{\color{cvred}Summer Intern} \\Chandrapura Thermal Power Station, DVC.}
+
+% ==============================================================
+%  ACADEMIC EXPERIENCE
+% ==============================================================
+\section{Academic Experience}
+
+\subsection{\color{cvred} Research Experience}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} Colorado State University \hfill Fort Collins, CO, USA}\\
+\textit{Graduate Research Assistant \hfill May 2022 -- Present}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+  \item \textbf{CPS security and resiliency analysis via AI planning:}
+  \begin{itemize}[leftmargin=*, itemsep=2pt, topsep=1pt]
+    \item \textit{SPEAR / i-EXAM} -- attack-connectivity graph modeling and hardening analysis; developed \href{https://huggingface.co/spaces/CryptoKnight007/i-EXAM}{i-EXAM}, an AI-planning and LLM-powered tool enabling system administrators to build network security profiles and run what-if hardening analyses.
+    \item \textit{Resiliency Graph (RG) / Safety Graph (SG)} -- unified frameworks modeling how cyber attacks propagate into system failures across IT and OT domains in cyber-physical systems.
+    \item \textit{SERA} -- an AI-driven, re-programmable simulation environment for explainable resiliency analysis, supporting both offensive/defensive security research and a teaching module for cybersecurity education.
+  \end{itemize}
+  \item \textbf{CAPE (Context-Aware CVE Prioritization Engine)} -- standalone publication effort. Scores CVEs reported against a project's SBOM using reachability and patch-presence evidence to suppress scanner false positives, then re-ranks surviving vulnerabilities with a 4-dimension, AHP-weighted priority score.
+  \item \textbf{OSCAR} -- cross-level risk propagation framework linking code-level risk metrics to ecosystem-level dependency exposure via a unified risk formula, to surface false-positive CVE alerts and structurally critical micro-dependencies otherwise missed by dependency-count-based tools.
+  \item \textbf{Firmware security infrastructure} -- designed and open-sourced a secure firmware remote update framework (\href{https://github.com/AMIProject0/Project-Cerberus-PLDM}{S-RFUP}), a protection-in-transit protocol (\href{https://github.com/cryptoknight13/PIT-Cerberus}{PIT}), and a CDDL mapping schema for firmware manifests (\href{https://github.com/cryptoknight13/CoDICE-Framework}{CoDICE}), built on Microsoft Project Cerberus and Google Open-DICE.
+\end{itemize}
+}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} National Institute of Standards and Technology (NIST) \hfill Gaithersburg, MD, USA}\\
+\textit{Foreign Research Scientist \hfill May 2024 -- May 2026}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+  \item Worked with \href{https://www.nist.gov/people/irena-bojanova}{Irena Bojanova} on the \href{https://www.nist.gov/itl/ssd/software-quality-group/samate/bugs-framework-bf}{Bugs Framework (BF)}, applying its formal language to causally classify security bugs and formalize CVE/CWE specifications.
+\end{itemize}
+}
+
+\subsection{\color{cvred} Teaching Experience}
+
+{\fontsize{10.87}{13.5}\selectfont
+Teaching and lab-design experience in computer networks and cybersecurity at the undergraduate and graduate level, alongside graduate coursework spanning AI, computer architecture, and cyber-physical systems.
+}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} Colorado State University \hfill Fort Collins, CO, USA}\\
+\textit{Graduate Teaching Assistant \hfill Aug 2025 -- Dec 2025}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+  \item Teaching assistant for CS457 (Computer Networks and the Internet); assisted with course design and led recitation sessions.
+  \item Delivered course lectures independently, with faculty authorization, in the instructor's absence on 4 occasions.
+  \item Designed exam questions and grading for CS457, contributing directly to course assessment.
+  \item Led a weekly Guidance, Study and Tutorial (GST) session during office hours: revised lecture material and worked through problem sets with students.
+  \item Designed labs for CS557 (Advanced Networking), including penetration-testing exercises, binary reverse-engineering labs, and other hands-on offensive-security exercises.
+  \item Supported student research and project development in CS556 (Computer Security).
+  \item Guided graduated student as external observer on ``How to handle peer-review process and analyses research paper?" for \href{https://courses.cs.colostate.edu/cs580b4/}{Usable Formal Methods for Security/Privacy}, CS 580B4 by McKenna McCall (Instructor).
+  \item Awarded \textit{Excellence in Teaching} by CSU for applying active-learning techniques grounded in Bloom's Taxonomy to recitation and lab design (see Awards).
+\end{itemize}
+}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} Office for Undergraduate Research and Artistry (OURA), CSU \hfill Fort Collins, CO, USA}\\
+\textit{Graduate Mentor \hfill Feb 2026 -- Jun 2026}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+  \item Guided undergraduate mentees through research projects, provided academic and research advising, and supported development of critical-thinking and research skills.
+\end{itemize}
+}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} Cybersecurity Camp Summer Program \hfill Fort Collins, CO, USA}\\
+\textit{Instructor / Camp Designer \hfill 2023 -- 2025}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+  \item Designed lectures, hands-on activities, and classroom exercises for week-long cybersecurity day camps serving 35--50+ high school students annually across three years.
+  \item Gained direct experience managing classroom-scale instruction and adapting technical material for varied skill levels.
+\end{itemize}
+}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textit{Pedagogical training:} Completed CSU Institute for Learning and Teaching certifications in Best Practices in Teaching, Critical Thinking Development, Inclusive Pedagogy, and Accessible Electronic Content -- applied directly to course, lab, and mentoring design above (see Scientific Trainings for full list).
+}
+
+% ==============================================================
+%  INDUSTRIAL EXPERIENCE
+% ==============================================================
+\section{Industrial Experience}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} AMI US Holdings Inc. \hfill Fort Collins, Colorado}\\
+\textit{Summer Intern \hfill May 2023 -- Aug 2023} \\
+Directed research to design 100+ firmware update APIs (lib. ``\textit{S-RFUP}'') with privileged access controls and rollback protection, 20+ (lib. ``\textit{PIT}'') secure boot APIs enforcing identity-based device authentication and ``\textit{Co-DICE}'' framework for CDDL mappings of firmware manifest in BMC.
+}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} Infosys Ltd. \hfill Bhubaneswar, India}\\
+\textit{Systems Engineer \hfill Jun 2021 -- Apr 2022} \\
+Transformed data between formats (30+ mapping tree) using IBM WebSphere, led team to optimize data handling efficiencies. Delivered more than 100 client requests of customised maps for various data formats.
+}
+
+\medskip
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} Cognizant Technology Solutions India Private Ltd. \hfill Kolkata, India}\\
+\textit{Programmer Analyst \hfill Nov 2020 -- May 2021} \\
+Specialized in Selenium for automated test planning and quality assurance in software development across 10+ projects.
+}
+
+% ==============================================================
+%  MENTORING EXPERIENCE
+% ==============================================================
+\section{Mentoring Experience}
+\medskip
+
+\cventry{\href{https://www.linkedin.com/in/wadia-ganim-67118a23b/}{Wadia Ganim}}{%
+  Engineer | Illinois ARCS | Singapore (\textbf{*1 Research Paper})}
+\cventry{\href{https://www.linkedin.com/in/sachin-kurup/}{Sachin Kurup}}{%
+  CSU Intern | BTech Computer Science | Amrita Vishwa Vidyapeetham }
+\cventry{\href{https://www.linkedin.com/in/matthew-leman/}{Matthew Leman}}{%
+  Undergraduate | Computer Science Department | CSU}
+\cventry{\href{https://www.linkedin.com/in/saswat-subhankar-32a1aa350/}{Saswat Subhankar}}{%
+  Undergraduate Intern | Computer Science Department | CSU}
+\cventry{\href{https://www.linkedin.com/in/enock-apedjinou/}{Enock Apedjinou}}{%
+  OURA Mentee | Computer Science Department | CSU}
+\cventry{\href{https://www.linkedin.com/in/jason-simental-295651183/}{Jason Simental}}{%
+  Undergraduate Researcher | Computer Science Department | CSU (\textbf{*1 Research Paper})}
+\cventry{\href{https://www.linkedin.com/in/tyler-rios/}{Tyler Rios}}{%
+  Graduate Student | Computer Science Department | Denver University (\textbf{*1 Research Paper})}
+\cventry{\href{https://www.linkedin.com/in/jack-sovereign-0b9752254/}{Jack Sovereign}}{%
+  Software Engineer | Ductus (\textbf{*1 Research Paper})}
+
+% ==============================================================
+%  PRESENTATIONS
+% ==============================================================
+\section{Presentations}
+
+\subsection{\color{cvred}Conference Presentations}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+
+\item \textbf{Title}: \textit{\color{cvred}i-EXAM: Instructable and Explainable Attack Connectivity Graph Modeler}. \textbf{Location}: The 36th International Conference on Automated Planning and Scheduling (ICAPS 2026), Dublin, Ireland, 2026.
+
+\item \textbf{Title}: \textit{\color{cvred}CoDICE: Roll the DICE for Firmware Attestation}. \textbf{Location}: The 2025 IEEE 7th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA), Pittsburgh, PA, USA, 2025.
+
+\item \textbf{Title}: \textit{\color{cvred}Resiliency Graphs: Modelling the Interplay between Cyber Attacks and System Failures through AI Planning}. \textbf{Location}: The 2024 IEEE 6th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA), The Darcy, Washington, DC, USA, 2024.
+
+\item \textbf{Title}: \textit{\color{cvred}Impact of White-Box Adversarial Attacks on Convolutional Neural Networks}. \textbf{Location}: The 2024 International Conference on Emerging Trends in Networks and Computer Communications (ETNCC), Windhoek, Namibia, 2024.
+
+\item \textbf{Title}: \textit{\color{cvred}The PIT-Cerberus Framework: Preventing Device Tampering During Transit}. \textbf{Location}: The 2024 IEEE 24th International Conference on Software Quality, Reliability and Security (QRS), The Churchill College, Cambridge, United Kingdom, 2024.
+
+\item \textbf{Title}: \textit{\color{cvred}Hybrid Encryption Algorithm for the Data Security of ESP32 based IoT-enabled Robots}. \textbf{Location}: The 2021 Innovations in Energy Management and Renewable Resources, Kolkata, India, 2021.
+
+\end{enumerate}
+
+\subsection{\color{cvred}Poster Presentations}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+
+\item \textbf{Title}: \textit{\color{cvred}Correctness and Security Analysis of the Protection In Transit (PIT) Protocol}. \textbf{Location}: NSF IUCRC Center for AI-ML Driven Research in Infrastructure Trust Assurance (AMRITA) Meeting, University of Wyoming (UW), Laramie, WY, 2025.
+
+\item \textbf{Title}: \textit{\color{cvred}Preventing Malicious Modifications to Firmware using Hardware Root of Trust (HRoT)}. \textbf{Location}: NSF IUCRC Center for AI-ML Driven Research in Infrastructure Trust Assurance (AMRITA) Meeting, University of Wyoming (UW), Laramie, WY, 2025.
+
+\item \textbf{Title}: \textit{\color{cvred} S-RFUP: Secure Remote Firmware Update
+Protocol}. \textbf{Location}: Graduate Student Showcase, Graduate School, Colorado State University, Fort Collins, CO, 2025.
+
+\item \textbf{Title}: \textit{\color{cvred} Explainable AI for Cybersecurity and Resiliency of Nuclear Power Plant}. \textbf{Location}: The 4th Big Data for Nuclear Power Plants Workshop, Columbus, Ohio, 2024.
+
+\item \textbf{Title}: \textit{\color{cvred} Correctness and Security Analysis of Protection in Transit (PIT) Protocol}. \textbf{Location}: Graduate Student Showcase, Graduate School, Colorado State University, Fort Collins, CO, 2024.
+
+\item \textbf{Title}: \textit{\color{cvred} How ``PIT'' Libraries Work?}. \textbf{Location}: NSF IUCRC Center for Cybersecurity Analytics and Automation (CCAA) IAB Meeting 2024, George Mason University, Fairfax, VA, 2024.
+
+\item \textbf{Title}: \textit{\color{cvred} Preventing Device Tampering During Transit using the Cerberus PIT Library and BIOS/BMC Boot Process Lockdown}. \textbf{Location}: NSF IUCRC Center for Cybersecurity Analytics and Automation (CCAA) IAB Meeting 2023, George Mason University, Fairfax, VA, 2023.
+
+\item \textbf{Title}: \textit{\color{cvred} Preventing Firmware Tampering during Transit}. \textbf{Location}: NSF IUCRC Center for Cybersecurity Analytics and Automation (CCAA) IAB Meeting 2023, Colorado State University, Fort Collins, CO, 2023.
+
+\item \textbf{Title}: \textit{\color{cvred} What is Project Cerberus?}. \textbf{Location}: Graduate Student Showcase, Graduate School, Colorado State University, Fort Collins, CO, 2023.
+
+\item \textbf{Title}: \textit{\color{cvred} Security Concerns for TPM 2.0}. \textbf{Location}: CS793 Research Seminar Presentation, Computer Science Department, Colorado State University, Fort Collins, CO, 2023.
+
+\item \textbf{Title}: \textit{\color{cvred} Implementing Protection in Transit}. \textbf{Location}: NSF IUCRC Center for Cybersecurity Analytics and Automation (CCAA) IAB Meeting, University of North Carolina at Charlotte (UNCC), Charlotte, NC, 2022.
+
+\end{enumerate}
+
+% ==============================================================
+%  INVITED TALKS
+% ==============================================================
+\section{Invited Talks}
+
+\cventry{July 2026}{%
+  CAE Community of Practice Cyber Research. \\ \textit{i-EXAM. A running case study}.}
+
+\cventry{March 2026}{%
+  Universitas Sam Ratulangi, Manado, Indonesia. \\ \textit{From Classical Systems to Intelligent Secure and Data-Centric Computing}.}
+
+\cventry{October 2025}{%
+  Northern Colorado ISSA, Lory Centre CSU, Fort Collins, CO, USA. \\ \textit{AI-Powered Cyber Security \& Cyber Resiliency}.}
+
+\cventry{July 2024}{%
+  TMI Summer Talks, Fort Collins, CO, USA. \\ \textit{The PIT-Cerberus Framework: Preventing Device Tampering During Transit}.}
+
+\cventry{October 2023}{%
+  NSF IUCRC Center for CCAA\\Colorado State University, Fort Collins, CO, USA \\ \textit{Remote Firmware Updates: Preventing Firmware Tampering}.}
+
+\cventry{April 2023}{%
+  NSF IUCRC Center for CCAA\\George Mason University, Fairfax, VA, USA \\ \textit{Protection in Transit -- What do we solve?}.}
+
+\cventry{October 2022}{%
+  NSF IUCRC Center for CCAA\\University of North Carolina at Charlotte (UNCC), Charlotte, USA \\ \textit{Protection in Transit: Enabling Tripartite Trust using a Mesh of Trusted Agents}.}
+
+% ==============================================================
+%  REVIEWER SERVICES
+% ==============================================================
+\section{Reviewer Services}
+
+{\fontsize{10.87}{13.5}\selectfont
+
+\textbf{\color{cvred}Ad Hoc Reviewer -- Journals}
+
+\smallskip
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+
+\item IEEE Transactions on Big Data (IEEE TBD), 2026 [\textbf{\color{cvred}1 Paper}].
+\item  Journal of Electronic Testing Theory and Applications (JETTA), 2025 [\textbf{\color{cvred}1 Paper}].
+\item Journal of Nonlinear, Complex and Data Science (JNCDS), 2024 [\textbf{\color{cvred}1 Paper}].
+
+\end{enumerate}
+\medskip
+\textbf{\color{cvred}Ad Hoc Reviewer -- Conferences}
+
+\smallskip
+\begin{enumerate}[leftmargin=*, label=\arabic*., itemsep=4pt, topsep=2pt]
+
+\item The 49th International Conference on Software Engineering (ICSE27) Dublin, Ireland, April 25-May 01, 2027 [\textbf{\color{cvred}4 Papers}].
+
+\item The 3rd International Conference on Electrical and Computer Engineering Researches (ICECER'26), Istanbul, Türkiye, December 03-05, 2026 [\textbf{\color{cvred}1 Paper}].
+
+\item The 6th International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME'26) , Bali, Indonesia, October 15-17, 2026 [\textbf{\color{cvred}1 Paper}].
+
+\item The 31th European Symposium on Research in Computer Security (ESORICS'26), Rome, Italy, September 14-16, 2026. [\textbf{\color{cvred}4 Papers}].
+
+\item The 31st ACM Symposium on Access Control Models and Technologies (ACM SACMAT'26), Waterloo, Canada, July 8 - 10, 2026 [\textbf{\color{cvred}3 Papers}].
+
+\item The 6th International Conference on Electrical, Computer and Energy Technologies (ICECET'26), Rome, Italy, July 6-9, 2026 [\textbf{\color{cvred}2 Papers}].
+
+\item The 16th ACM Conference on Data and Application Security and Privacy (CODASPY'26), Frankfurt am Main, Germany June 23 -- 25, 2026 [\textbf{\color{cvred}1 Paper}].
+
+\item The 3rd International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA'26), Boracay Island, Philippines, February 05-07, 2026 [\textbf{\color{cvred}2 Papers}].
+
+\item Workshop on Advances in Systems and Computation at the Edge and HPC Networks (ASCENT'25), ICDCN'26, Nara, Japan, January 06-09, 2026 [\textbf{\color{cvred}2 Papers}].
+
+\item The 2025 IEEE 7th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS-ISA), Pittsburgh, USA, November 11-14, 2025 [\textbf{\color{cvred}1 Paper}].
+
+\item The 2nd International Conference on Electrical and Computer Engineering Researches (ICECER'25), Antananarivo 101, Madagascar, December 06-08, 2025 [\textbf{\color{cvred}2 Papers}].
+
+\item The 2025 International Conference on Emerging Trends in Networks and Computer Communications (ETNCC'25), Windhoek, Namibia, August 05-07, 2025 [\textbf{\color{cvred}1 Paper}].
+
+\item The International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA'25), Antalya, Türkiye, August 7-9, 2025 [\textbf{\color{cvred}2 Papers}].
+
+\item The 5th International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME'25) , Zanzibar, Tanzania, October 16-19, 2025 [\textbf{\color{cvred}1 Paper}].
+
+\item The 30th European Symposium on Research in Computer Security (ESORICS'25), Toulouse, France, September 22-26, 2025. [\textbf{\color{cvred}3 Papers}].
+
+\item The 29th European Symposium on Research in Computer Security (ESORICS'24), Bydgoszcz, Poland, September 16-20, 2024. [\textbf{\color{cvred}1 Paper}].
+
+\item The 14th ACM Conference on Data and Application Security and Privacy (CODASPY'24), Porto, Portugal June 19--21, 2024. [\textbf{\color{cvred}1 Paper}].
+
+\item The 28th European Symposium on Research in Computer Security (ESORICS'23), The Hague, The Netherlands, September 25-29, 2023. [\textbf{\color{cvred}1 Paper}].
+
+\item The 5th International Conference on Information Science and Systems (ICISS'22), Beijing, China, August 26-28, 2022 [\textbf{\color{cvred}1 Paper}].
+
+\item The 36th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec'22), Rutgers University, Newark, NJ, USA, July 18-20, 2022 [\textbf{\color{cvred}1 Paper}].
+
+\end{enumerate}
+}
+
+% ==============================================================
+%  PUBLIC ENGAGEMENT
+% ==============================================================
+\section{Public Engagement}
+
+\cventry{Apr. 2027\\(upcoming)}{%
+   Serving as \textbf{Shadow PC} in  \href{https://conf.researchr.org/home/icse-2027}{49th International Conference on Software Engineering (ICSE 2027)}, Apr. 25- May 1, 2027 in Dublin, Ireland.}
+
+\cventry{Jan. 2027\\(upcoming)}{%
+  Serving as a \textbf{Technical Program Committee (TPC) Member} for the \href{https://anuragsatpathy.github.io/ascent-icdcn2027/\#home}{2nd ASCENT Workshop} (Advances in Systems and Computation at the Edge and HPC Networks), January 04-07, which was held in conjunction with the ICDCN Conference, January 04-07, 2027.}
+
+\cventry{Mar. 2027\\(upcoming)}{%
+  Serving as a \textbf{Technical Program Committee (TPC) Member} for the \href{https://anuragsatpathy.github.io/perrobotics-2027/}{PerRobotics 2027: Pervasive Robotics -- Sensing, Intelligence, and Coordination for Human-Centered Smart Environments)}, a workshop co-located with \href{https://percom.org/}{IEEE PerCom 2027} in Goa, India.}
+
+\cventry{Mar. 2027\\(upcoming)}{%
+   Serving as \textbf{Registration Chair} in  \href{https://ieee-stc.github.io/conorg.html}{30th Annual Software Technology Conference (STC 2027)}, May 4-6, 2027.}
+
+\cventry{Jul. 2026}{%
+  Participated in \href{https://www.nemesysinsights.com/research/ics}{Human-AI ICS Cybersecurity Challenge Research Study} from July-August 2026, conducted by  \href{https://www.nemesysinsights.com/}{Nemesys Insights, LLC.}}
+
+\cventry{Jul. 2026}{%
+  Served as \textbf{Artifact Evaluation Program Committee Member} in The 31st ACM Symposium on Access Control Models and Technologies (ACM SACMAT 2026), Waterloo, Canada, July 8 - 10, 2026.}
+
+\cventry{Jan. 2026}{%
+  Served as a \textbf{Technical Program Committee (TPC) Member} for the \href{https://sites.google.com/view/ascent-icdcn2026/}{ASCENT Workshop (Advances in Systems and Computation at the Edge and HPC Networks)}, January 06-09, which was held in conjunction with the ICDCN Conference, January 06-09, 2026.}
+
+\cventry{Nov. 2025}{%
+   Served as \textbf{Student Volunteer} in  \href{https://www.sis.pitt.edu/lersais/conference/tps/2025/index.html}{IEEE TPS 2025}, Nov. 2025.}
+
+\cventry{Mar. 2025}{%
+   Served as \textbf{Review Committee Member} in  \href{https://www.sciencepublishinggroup.com/journal/303/reviewers}{American Journal of Computer Science and Technology}, Mar. 2025.}
+
+\cventry{Jul. 2025}{%
+  \textbf{2025 Cybersecurity Camp Summer Program}, July 2025\\ Hosted a one-week (5-day) \href{https://csucybercamp.cs.colostate.edu/}{CyberSecurity Day Camp at CSU Fort Collins} and another one-week (5-day) Camp at \href{https://csuspur.org/summer-camps/}{CSU SPUR Campus} for 50+ high school students.}
+
+\cventry{Jul. 2024}{%
+  \textbf{2024 Cybersecurity Camp Summer Program}, July 2024 \\ Organized a one-week (5-day) CyberSecurity Day Camp at Colorado State University, Fort Collins, Colorado for 45+ high school students.}
+
+\cventry{Jul. 2023}{%
+  \textbf{2023 Cybersecurity Camp Summer Program}, July 2023 \\ Organized a one-week (5-day) CyberSecurity Day Camp at Colorado State University, Fort Collins, Colorado for 35+ high school students.}
+
+% ==============================================================
+%  PROFESSIONAL AFFILIATIONS
+% ==============================================================
+\section{Professional Affiliations}
+
+{\fontsize{10.87}{13.5}\selectfont
+\textbf{\color{cvred} NCAE-C PhD Student Club}\\
+CAE Community of Practice Cyber Research, since May 2026
+
+\medskip
+\textbf{\color{cvred}ACM -- Association for Computing Machinery}\\
+Membership ID 8520334, since July 2025
+
+\medskip
+\textbf{\color{cvred}IEEE -- The Institute of Electrical and Electronics Engineers}\\
+IEEE Student Member, ID 100267751, since May 2024
+
+\medskip
+\textbf{\color{cvred}Northern Colorado Information Systems Security Association (ISSA)}\\
+NoCo ISSA Student Member
+
+\medskip
+\textbf{\color{cvred}Institute for Systems and Technologies of Information, Control, and Communication (INSTICC)} -- \textit{Affiliate Member}
+}
+
+% ==============================================================
+%  SCIENTIFIC TRAININGS
+% ==============================================================
+\section{Scientific Trainings}
+
+\cventry{May 2026 -- July 2026\\(Online)}{%
+  \textbf{\color{cvred}Best Practices in Teaching at CSU} \\ TILT, Colorado State University
+  \begin{itemize}
+      \item 4-week Course: Best Practices in Teaching
+      \item 4-week Course: Critical Thinking
+      \item 4-week Course: Inclusive Pedagogy
+      \item 4-week Course: Accessible and Inclusive Electronic Content
+      \item 4-week Course: Inclusive Pedagogy 2
+  \end{itemize} }
+
+\cventry{May 2026 \\(Online)}{%
+  \textbf{\color{cvred}Graduate Student Mentor Training } \\ The Institute for Learning and Teaching \\ Colorado State University}
+
+\cventry{Feb. 2026 -- July 2026\\(Online)}{%
+  \textbf{\color{cvred}Early Career Grants Program} \\ CSU WRITES, Colorado State University \\
+  \begin{itemize}
+      \item Webinar: Grant Program Information Session
+      \item Webinar: RAO Grant Writing Overview -- Early Career
+      \item Webinar: Grants \& GenAI - Strategies and Guidelines
+      \item Webinar: Structuring Your Project Narrative with RAO
+      \item Webinar: NSF Career Proposal Strategies
+  \end{itemize} }
+
+\cventry{Jan. 2026 \\(Online)}{%
+  \textbf{\color{cvred}Graduate Teaching Assistant Training} \\ The Institute for Learning and Teaching \\ Colorado State University}
+
+\cventry{Oct. 2025 \\(In Person)}{%
+  \textbf{\color{cvred}Graduate Student Mentoring Training} \\ The Graduate School \\ Colorado State University}
+
+\cventry{Oct. 2025 \\(Online)}{%
+  \textbf{\color{cvred}Excellence in Teaching} \\ The Language, Culture, and Resources program for Excellence in Teaching  \\ Colorado State University}
+
+\cventry{Jul. 2025 \\(Online)}{%
+  \textbf{\color{cvred}Social / Humanistic / Behavioral Research} \\ CITI Program \\ Colorado State University}
+
+\cventry{Aug. 2023 -- Nov. 2023 \\(In Person)}{%
+  \textbf{\color{cvred}Ethical Conduct of Research} \\ The Graduate School \\ Colorado State University}
+
+% ==============================================================
+%  SKILLS
+% ==============================================================
+\section{Skills}
+
+\cventry{Languages}{%
+  Native: Bengali\\
+  Other languages: English, Hindi}
+
+\cventry{Programming \& Development}{%
+  Proficient: C/C++, PDDL, Python. Familiar: JavaScript, SQL, Java, Git, Verilog HDL, \LaTeX}
+
+\cventry{Libraries and ML Algorithms}{%
+  TensorFlow, PyTorch, NumPy, Pandas, Matplotlib, Scikit-Learn, Seaborn, ART, cleverhans; LLM, CtmNN, Decision Trees, Transformers}
+
+\cventry{Databases \& Operating Systems}{%
+  PostgreSQL, MySQL, MongoDB; Kali, Linux, Mac OS, Windows, Hypervisors, QEMU, Virtual Box, VMware, Docker}
+
+\cventry{Tools \& Technologies}{%
+  Splunk, ELK, CAN, STRIDE, GNS3, TLA+, Wazuh, Caldera, OPNsense, pfSense, CPN, Wireshark, Google Colab, Heroku, Azure, Jupyter Notebook, UPPAAL, Syft, x86, ARM, MITRE ATT\&CK, Suricata, Procmon, Grype, OpenVAS, Tenable, Active Directory, LLVM, NIST 800-61, ISO 27035, REMnux, Burp Suite}
+
+\cventry{Open Source Projects}{%
+  HexStrike AI, Project Cerberus, OpenBMC-libpldm, VAL, Forbid Iterator, Fast Downward, Open-DICE}
+
+% ==============================================================
+%  REFERENCES
+% ==============================================================
+\section{References}
+
+\textbf{\color{cvred}Prof. Indrajit Ray} \\
+          Professor and Associate Chair \\
+          Department of Computer Science \\
+          Colorado State University \\
+          Fort Collins, Colorado, 80523, USA \\
+          Email: \href{mailto:indrajit.ray@colostate.edu}{indrajit.ray@colostate.edu} \\
+          Phone: +1 (970) 420-8003 \\
+
+\textbf{\color{cvred}Prof. Indrakshi Ray} \\
+          Director, Colorado Center for Cyber Security \\
+          Department of Computer Science \\
+          Colorado State University \\
+          Fort Collins, Colorado, 80523, USA \\
+          Email: \href{mailto:indrakshi.ray@colostate.edu}{indrakshi.ray@colostate.edu} \\
+          Phone: +1 (970) 491-7986 \\
+
+\textbf{\color{cvred}Dr. Sarath Sreedharan} \\
+          Assistant Professor \\
+          Department of Computer Science \\
+          Colorado State University \\
+          Fort Collins, Colorado, 80523, USA \\
+          Email: \href{mailto:Sarath.Sreedharan@colostate.edu}{sarath.sreedharan@colostate.edu} \\
+          Phone: +1 (970) 491-7008 \\
+\end{document}
